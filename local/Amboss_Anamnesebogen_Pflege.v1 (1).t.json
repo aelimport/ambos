@@ -5,8 +5,8 @@
     "@type" : "RESOURCE_DESCRIPTION",
     "originalAuthor" : {
       "date" : "2025-11-06",
-      "name" : "Grok (xAI)",
-      "organisation" : "AMBOSS / xAI"
+      "name" : "Alexey Elimport",
+      "organisation" : "MUL-CT [Datenintegrationszentrum]"
     },
     "otherContributors" : [ ],
     "lifecycleState" : {
@@ -20,10 +20,11 @@
       "original_namespace" : "org.amboss",
       "original_publisher" : "AMBOSS",
       "custodian_namespace" : "org.amboss",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "0.0.1",
       "original_language" : "ISO_639-1::de",
-      "MD5-CAM-1.0.1" : "5c5e42794048aa5772aff344264dafc4",
-      "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE"
+      "MD5-CAM-1.0.1" : "d376f31b168d50d22da7b8395aaff124",
+      "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE",
+      "build_uid" : ""
     },
     "details" : {
       "de" : {
@@ -436,7 +437,192 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -454,12 +640,12 @@
         "existence" : "0..1",
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "OBSERVATION",
-          "occurrences" : "0..1",
-          "nodeId" : "at0.1",
+          "rmTypeName" : "EVALUATION",
+          "occurrences" : "0..100",
+          "nodeId" : "at0.7",
           "attributes" : [ ],
           "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-OBSERVATION.ovl-story-001.v1",
+          "archetypeRef" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1",
           "referenceType" : "archetypeOverlay"
         } ]
       } ],
@@ -736,205 +922,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "7e289b5c-e123-4dc0-9aad-548352b64915",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "1A61B31372BDA3910BE19BDA970C63CC"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-OBSERVATION.story.v1",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-OBSERVATION.ovl-story-001.v1"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "OBSERVATION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "ar-sy" : { },
-        "en" : { },
-        "es-ar" : { },
-        "ko" : { },
-        "nb" : { },
-        "pt-br" : { },
-        "it" : { },
-        "de" : { },
-        "nl" : { },
-        "sv" : { },
-        "zh-cn" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "087c41ec-33fa-4512-9d65-fce4ef8f0a50",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Sarah Ballout, Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "ballout.sarah@mh-hannover.de, Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "sv"
-      },
-      "author" : {
-        "name" : "Emma Malm",
-        "organisation" : "Karolinska Universitetssjukhuset",
-        "email" : "emma.malm@cambio.se"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ko"
-      },
-      "author" : {
-        "name" : "Seung-Jong Yu",
-        "organisation" : "NOUSCO Co.,Ltd.",
-        "email" : "seungjong.yu@gmail.com"
-      },
-      "accreditation" : "Certified board of Family medicine",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es-ar"
-      },
-      "author" : {
-        "name" : "Guillermo Palli"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nb"
-      },
-      "author" : {
-        "name" : "Silje Ljosland Bakke",
-        "organisation" : "Nasjonal IKT HF, Helse Vest IKT AS",
-        "email" : "silje.ljosland.bakke@helse-vest-ikt.no"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Osmeire Chamelette Sanzovo",
-        "organisation" : "Hospital Sírio Libanês - SP",
-        "email" : "osmeire.acsanzovo@hsl.org.br"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "ar-sy"
-      },
-      "author" : {
-        "name" : "Mona Saleh"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "it"
-      },
-      "author" : {
-        "name" : "Francesca Frexia",
-        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
-        "email" : "francesca.frexia@crs4.it"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "zh-cn"
-      },
-      "author" : {
-        "name" : "Lin Zhang",
-        "organisation" : "Freelancer",
-        "email" : "linforest@163.com"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "nl"
-      },
-      "author" : {
-        "name" : "Joost Holslag",
-        "organisation" : "Nedap, Joost Holslag Geneeskunde & Advies",
-        "email" : "joost.holslag@nedap.com, info@joostholslag.nl"
-      },
-      "accreditation" : "MD",
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "a82233b9-7f2d-4dd5-8db4-37f6963cfd8c",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -946,7 +933,192 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "E7D2CBE63256A27215D368CB0FCC3960"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Eine generische Abschnittsüberschrift eines Templates, welche entsprechend dem spezifischen klinischen Kontext umbenannt werden sollte.",
+          "keywords" : [ "Abschnitt", "Template", "Überschrift", "Ad hoc", "Abschnittsüberschrift" ],
+          "use" : "Dieser Archetyp kann für die Erstellung einer Abschnittsüberschrift in einem Template verwendet werden. Die Überschrift kann, passend zu dem jeweiligen klinischen Kontext, umbenannt werden. Zum Beispiel: \"Ad hoc Überschrift\" wird umbenannt in \"Untersuchungsergebnisse\".\r\n\r\n",
+          "misuse" : "Die Überschrift sollte in einem Template nicht unverändert verwendet werden.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "En allmän avsnittsrubrik som döps om i en openEHR-mall för att passa in i en specifik klinisk kontext.",
+          "keywords" : [ ],
+          "use" : "Används för att skapa en avsnittsrubrik i en openEHR-mall som sedan döps om för att passa in i den specifika kliniska kontexten. Exempelvis \"Rubrik\" döps om till \"Undersökningsfynd\".",
+          "misuse" : "Ska inte lämnas oförändrad i en openEHR-mall.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ru" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ru"
+          },
+          "purpose" : "Базовый заголовок раздела, должен быть переименован в локальном шаблоне ",
+          "keywords" : [ "раздел", "шаблон", "заготовка", "название", "образец" ],
+          "use" : "используется для создания и именования разделов в локальных шаблонах",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "Brukes som en generisk seksjonsoverskrift som skal gis nytt navn i en templat for å passe i en gitt klinisk kontekst.",
+          "keywords" : [ ],
+          "use" : "Brukes til å lage en seksjonsoverskrift i en templat, hvis navn deretter endres for å passe i den aktuelle kliniske konteksten. For eksempel: \"Templat-overskrift\" endret til \"Funn ved undersøkelse\", \"Anamnese\", \"Personopplysninger\" eller \"Oppsummering\".",
+          "misuse" : "Skal ikke stå med uendret navn i en templat.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es-ar" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es-ar"
+          },
+          "purpose" : "Proporcionar un encabezado de sección de tipo genérico que será renombrado en una plantilla para su empleo en un contexto clínico específico.",
+          "keywords" : [ ],
+          "use" : "Utilizar para construir un encabezado de sección en una plantilla y que será renombrado para su empleo en un contexto clínico específico. Por ejemplo, \"Encabezado ad hoc\" puede renombrarse como \"Hallazgos de examen\".",
+          "misuse" : "No debe mantenerse sin cambios en una plantilla.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "Oferecer um cabeçalho de uma sessão genérica que será renomeado no template para adequar-se a um contexto clínico específico.",
+          "keywords" : [ "cabeçalho" ],
+          "use" : "Utilize para construir um cabeçalho de uma sessão (de um template) que será renomeada para adequar-se a um contexto clínico específico. Por exemplo: \"cabeçalho Ad hoc\" renomeado para \"Achados de exame\".",
+          "misuse" : "Não deve manter a configuração original no template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a generic section header which will be renamed in a template to suit a specific clinical context.",
+          "keywords" : [ ],
+          "use" : "Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".",
+          "misuse" : "Not to be left unchanged in a template.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sl"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Fornire un'intestazione generica della sezione che sarà rinominata in un template per adattarsi ad uno specifico contesto clinico.",
+          "keywords" : [ ],
+          "use" : "Usato per costruire un'intestazione di sezione in un template che sarà rinominato in base al contesto clinico specifico. Per esempio: \"Intestazione ad hoc\" rinominata in \"Risultati dell'esame\".",
+          "misuse" : "Non deve essere lasciato invariato in un template.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "fr" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "fr"
+          },
+          "purpose" : "*To provide a generic section header which will be renamed in a template to suit a specific clinical context.(en)",
+          "keywords" : [ ],
+          "use" : "*Use to construct a section heading in a template that will be renamed to suit the specific clinical context. For example: \"Ad hoc heading\" renamed to \"Examination findings\".(en)",
+          "misuse" : "*Not to be left unchanged in a template.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Per proporcionar una capçalera de secció genèrica que es canviarà de nom en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar-se per construir un encapçalament de secció en una plantilla que es canviarà de nom per adaptar-se al context clínic específic. Per exemple: \"Encapçalament ad hoc\" canviat de nom a \"Conclusió de l'examen\".",
+          "misuse" : "No es deixarà sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Proporcionar un encapçalament de secció genèric que serà rebatejat en una plantilla per adaptar-se a un context clínic específic.",
+          "keywords" : [ ],
+          "use" : "Utilitzar per a construir un encapçalament de secció en una plantilla que serà rebatejada per adaptar-se al context clínic específic. Per exemple: «Títol ad hoc» rebatejat a «Resultats de l'examen».",
+          "misuse" : "No s'ha de deixar sense canvis en una plantilla.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.adhoc.v1",
     "differential" : true,
@@ -964,17 +1136,8 @@
         "existence" : "0..1",
         "children" : [ {
           "@type" : "C_ARCHETYPE_ROOT",
-          "rmTypeName" : "SECTION",
-          "occurrences" : "0..0",
-          "nodeId" : "at0.1",
-          "attributes" : [ ],
-          "attributeTuples" : [ ],
-          "archetypeRef" : "openEHR-EHR-SECTION.ovl-problem_list-003.v0",
-          "referenceType" : "archetypeOverlay"
-        }, {
-          "@type" : "C_ARCHETYPE_ROOT",
           "rmTypeName" : "EVALUATION",
-          "occurrences" : "0..0",
+          "occurrences" : "0..1",
           "nodeId" : "at0.2",
           "attributes" : [ ],
           "attributeTuples" : [ ],
@@ -1300,104 +1463,6 @@
     } ]
   }, {
     "@type" : "TEMPLATE_OVERLAY",
-    "uid" : "496598a7-dcfa-45fb-8886-f5b76c2333d9",
-    "description" : {
-      "@type" : "RESOURCE_DESCRIPTION",
-      "originalAuthor" : { },
-      "otherContributors" : [ ],
-      "ipAcknowledgements" : { },
-      "references" : { },
-      "conversionDetails" : { },
-      "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "8367D4F2CF2BA5BE59DC4442FD28C085"
-      },
-      "details" : { }
-    },
-    "parentArchetypeId" : "openEHR-EHR-SECTION.problem_list.v0",
-    "differential" : true,
-    "archetypeId" : {
-      "@type" : "ARCHETYPE_HRID",
-      "value" : "openEHR-EHR-SECTION.ovl-problem_list-003.v0"
-    },
-    "definition" : {
-      "@type" : "C_COMPLEX_OBJECT",
-      "rmTypeName" : "SECTION",
-      "nodeId" : "at0000.1",
-      "attributes" : [ ],
-      "attributeTuples" : [ ]
-    },
-    "terminology" : {
-      "@type" : "ARCHETYPE_TERMINOLOGY",
-      "conceptCode" : "at0000",
-      "termDefinitions" : {
-        "en" : { },
-        "pt-br" : { },
-        "es-ar" : { },
-        "de" : { }
-      },
-      "termBindings" : { },
-      "terminologyExtracts" : { },
-      "valueSets" : { }
-    },
-    "adlVersion" : "1.4",
-    "buildUid" : "46c18c89-3428-4e56-8aaa-33e4907ea711",
-    "rmName" : "openehr",
-    "rmRelease" : "1.1.0",
-    "generated" : true,
-    "otherMetaData" : { },
-    "originalLanguage" : {
-      "terminologyId" : {
-        "value" : "ISO_639-1"
-      },
-      "codeString" : "en"
-    },
-    "translations" : [ {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "de"
-      },
-      "author" : {
-        "name" : "Natalia Strauch",
-        "organisation" : "Medizinische Hochschule Hannover",
-        "email" : "Strauch.Natalia@mh-hannover.de"
-      },
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "es-ar"
-      },
-      "author" : {
-        "name" : "Alan March",
-        "organisation" : "Hospital Universiatario Austral, Pilar, Buenos Aires, Argentina.",
-        "email" : "alandmarch@gmail.com"
-      },
-      "accreditation" : "MD",
-      "otherDetails" : { }
-    }, {
-      "@type" : "TRANSLATION_DETAILS",
-      "language" : {
-        "terminologyId" : {
-          "value" : "ISO_639-1"
-        },
-        "codeString" : "pt-br"
-      },
-      "author" : {
-        "name" : "Adriana Kitajima, Débora Farage, Fernanda Maia, Laíse Figueiredo, Marivan Abrahão",
-        "organisation" : "Core Consulting",
-        "email" : "contato@coreconsulting.com.br"
-      },
-      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
-      "otherDetails" : { }
-    } ]
-  }, {
-    "@type" : "TEMPLATE_OVERLAY",
     "uid" : "6c812c8c-ca00-496a-97dd-6e4916bd1ccf",
     "description" : {
       "@type" : "RESOURCE_DESCRIPTION",
@@ -1409,7 +1474,129 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "C8015C0CAA2F425EF80DB7A794F19DB9"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung der klinischen Beurteilung der Neigung einer Person, eine unerwünschte Reaktion zu verspüren, wenn sie einem bestimmten Stoff oder einer bestimmten Stoffklasse ausgesetzt oder erneut ausgesetzt wird.",
+          "keywords" : [ "Reaktion", "Allergie", "allergisch", "unerwünscht", "Ereignis", "Wirkung", "Empfindlichkeit", "Intoleranz", "Überempfindlichkeit", "Nebenwirkung", "Toxizität", "Arzneimittel", "Lebensmittel", "Agent", "Substanz", "immun", "nicht immun", "chemisch", "Anaphylaxie", "Allergen", "Medikation", "Ergänzung", "Medizin", "Naturarzneimittel", "immunologisch", "nicht immunologisch", "Risiko" ],
+          "use" : "Wird verwendet, um eine klinische Bewertung der Neigung zu unerwünschten Reaktionen bei künftiger Exposition gegenüber einem bestimmten Stoff oder einer bestimmten Stoffklasse aufzuzeichnen, einschließlich, aber nicht beschränkt auf Ausgangs- und Hilfsstoffe in Arzneimitteln, biologischen Produkten, Metallsalzen und organischen chemischen Verbindungen.\r\n\r\nDieser Archetyp soll einen einzigen Ort in der Gesundheitsakte bieten, um die Neigung zu allen möglichen Reaktionen, von trivial bis lebensbedrohlich, zu dokumentieren:\r\n- immunvermittelt: Typ I-IV (einschließlich allergischer Reaktionen und Überempfindlichkeiten); oder\r\n- nicht immunvermittelt: einschließlich pseudoallergischer Reaktionen, Nebenwirkungen, Unverträglichkeiten und Arzneimitteltoxizitäten.\r\nIn der klinischen Praxis kann es schwierig sein, zwischen immunvermittelten und nicht immunvermittelten Reaktionen zu unterscheiden. Die Identifizierung der Art der Reaktion ist kein Indikator für die Schwere oder das Risiko einer Schädigung des Patienten.\r\n\r\nWenn eine Neigung identifiziert wird, können Informationen oder Beweise zu einem oder mehreren Reaktionsereignissen mithilfe des Archetyps CLUSTER.adverse_reaction_event im SLOT „Zusammenfassung des Reaktionsereignisses“ aufgezeichnet werden.\r\n\r\nDie Identifizierung der Schwere der Manifestation der Reaktion, die im Archetyp CLUSTER.adverse_reaction_event aufgezeichnet wird, kann Aufschluss über die „Kritikalität“ des Risiko einer unerwünschten Reaktion geben. Wenn beispielsweise bei der ersten Exposition gegenüber einer Substanz eine Anaphylaxie auftritt, müsste die „Kritikalität“ auf „hoch“ gesetzt werden, da das Risiko hoch ist, dass die Anaphylaxie bei der zweiten und weiteren Expositionen erneut auftritt.\r\n\r\nDieser Archetyp wurde entwickelt, um die Aufzeichnung von Informationen über eine bestimmte Substanz (Amoxicillin, Austern oder Bienenstichgift) oder alternativ eine Substanzklasse (z. B. Penicilline) zu ermöglichen. Wenn eine Substanzklasse erfasst wird, kann mithilfe des Archetyps CLUSTER.adverse_reaction_event die Identifizierung der genauen Substanz pro Reaktion erfasst werden.\r\n\r\nZur Aufzeichnung von Informationen über das positive Vorliegen des Risikos einer Nebenwirkung:\r\n- zur Unterstützung der direkten klinischen Versorgung einer Person;\r\n- als Teil einer Liste verwalteter Nebenwirkungen oder Allergien/Unverträglichkeiten;\r\n- den Austausch von Informationen über die Neigung und Ereignisse im Zusammenhang mit Nebenwirkungen zu unterstützen;\r\n- um die Meldung von Nebenwirkungen zu informieren; Und\r\n- Unterstützung bei computergestützten wissensbasierten Aktivitäten wie klinischer Entscheidungsunterstützung und Warnungen.\r\n\r\nDas Risiko einer unerwünschten Reaktion oder Manifestation muss immer auf einen auslösenden Stoff oder eine auslösende Stoffklasse schließen lassen. Wenn ein gewisser Grad an Unsicherheit darüber besteht, dass ein bestimmter Stoff die Ursache ist, kann der Grad der Unsicherheit mithilfe des Datenelements „Verifizierungsstatus“ erfasst werden. Wenn mehr als eine mögliche Substanz eine Reaktion/Manifestation verursacht haben könnte, sollte jede Substanz mithilfe einer separaten Instanz dieses Archetyps des Risiko einer Unerwünschten Reaktion aufgezeichnet werden, wobei der „Verifizierungsstatus“ auf den Anfangsstatus „Unbestätigt“ gesetzt ist, damit die Nebenwirkungsprüfung durchgeführt werden kann in klinischen Systemen aktiviert werden. Wenn sich später herausstellt, dass die Substanz nicht ursächlich ist, kann der „Verifizierungsstatus“ auf „Widerlegt“ geändert werden – beispielsweise nach einem Allergietest.",
+          "misuse" : "Nicht zur Aufzeichnung physiologischer Reaktionen auf physikalische Einwirkungen wie Hitze, Kälte, Sonnenlicht, Vibration, körperliche Betätigung, Infektionserreger oder Lebensmittelverunreinigungen geeignet. Verwenden Sie zu diesem Zweck einen bestimmten Archetyp für EVALUATION.problem/diagnosis oder CLUSTER.symptom/sign.\r\n\r\nNicht zur Aufzeichnung unerwünschter Ereignisse, einschließlich Fehlern bei klinischen Prozessen, Interventionen oder Produkten, geeignet. Zum Beispiel: anormaler Gebrauch, falsche Dosierung oder fehlerhafte Verabreichung eines Wirkstoffs oder einer Substanz; falsche Etikettierung; Schäden oder Verletzungen, die durch einen Eingriff oder eine Prozedur verursacht werden; Überdosis/Vergiftung usw. Verwenden Sie für diesen Zweck einen bestimmten Archetyp.\r\n\r\nDarf nicht zur Aufzeichnung einer Nebenwirkung verwendet werden, bei der der Stoff unbekannt ist. Verwenden Sie EVALUATION.problem_diagnosis oder CLUSTER.symptom_sign, um als Teil der Gesundheitsakte aufzuzeichnen, bis eine mögliche Substanz identifiziert wird.\r\n\r\nNicht zur Aufzeichnung von Reaktionen auf Transfusionen von Blutprodukten geeignet. Verwenden Sie zu diesem Zweck einen bestimmten Archetyp.\r\n\r\nDarf nicht für die Aufzeichnung von „Alarmen“ verwendet werden. Verwenden Sie zu diesem Zweck EVALUATION.precaution, EVALUATION.contraindication oder verwandte Archetypen.\r\n\r\nNicht für die Aufzeichnung fehlgeschlagener Therapien geeignet.\r\n\r\nDarf nicht für die explizite Aufzeichnung des Fehlens (oder des negativen Vorliegens) einer Reaktion auf „irgendeine Substanz“ oder auf identifizierte Substanzen verwendet werden, zum Beispiel „Keine bekannten Allergien oder Nebenwirkungen“ oder „Keine bekannten Allergien gegen Penicillin“. Verwenden Sie die Archetypen EVALUATION.exclusion_global oder EVALUATION.exclusion_special, um eine positive Aussage zum Ausschluss von Nebenwirkungen auszudrücken.\r\n\r\nNicht zu verwenden für die explizite Erfassung, dass keine Informationen über den Nebenwirkungsstatus eines Patienten eingeholt werden konnten. Verwenden Sie den Archetyp EVALUATION.absence, um eine positive Aussage zu erfassen, dass Informationen nicht eingeholt werden konnten, beispielsweise wenn ein nicht kooperativer Patient sich weigert, Fragen zu beantworten.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "sv" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "sv"
+          },
+          "purpose" : "Att dokumentera den kliniska bedömningen av benägenheten hos en individ att uppleva en reaktion om individen exponeras, eller återexponeras, för ett specificerat ämne eller klass av ämnen.",
+          "keywords" : [ "reaktion", "allergi", "allergisk", "ogynnsam", "händelse", "effekt", "känslighet", "intolerans", "överkänslighet", "biverkning", "toxicitet", "läkemedel", "födoämne", "agens", "substans", "immun", "icke-immun", "kemiskt ämne", "anafylaxi", "allergen", "medicin", "hjälpämne", "tillsats", "läkemedel", "naturläkemedel", "immunologisk", "icke-immunologisk", "risk" ],
+          "use" : "Används för att dokumentera en klinisk bedömning av en benägenhet för en reaktion vid framtida exponering för ett specificerat ämne eller klass av ämnen inklusive, men inte begränsat till, verksamma ämnen (aktiva substanser) och hjälpämnen i läkemedelsberedningar, biologiska produkter, metallsalter och organiska kemiska föreningar.\r\n\r\nDenna arketyp är avsedd att tillhandahålla en enda plats i journalen för att dokumentera benägenheten för alla reaktioner, från triviala till livshotande:\r\n- immunmedierad: typ I-IV (inklusive allergiska reaktioner och överkänslighet); eller\r\n- icke-immunmedierad: inklusive pseudo-allergiska reaktioner, biverkningar, intoleranser och läkemedelstoxicitet.\r\nI klinisk praxis kan det vara svårt att skilja mellan immunmedierade och icke-immunmedierade reaktioner. Identifiering av typen av reaktion är inte en ersättning för allvarlighetsgrad eller risk för skada på patienten.\r\n\r\nNär en reaktionsbenägenhet identifieras kan information om eller belägg för en eller flera inträffade reaktioner registreras med hjälp av arketypen CLUSTER.adverse_reaction_event under rubriken \"Reaktionshändelsesammanfattning\" (KONTROLLERA REFERENS).\r\n\r\nIdentifiering av svårighetsgraden av manifestationen av reaktionen, dokumenterad i arketypen CLUSTER.adverse_reaction_event, kan ange allvarlighetsgraden för biverkningsrisken. Om man till exempel upplever anafylaxi vid första exponeringen för ett ämne skulle det motivera att man anger allvarlighetsgraden som hög (livshotande), på grund av den höga risken för att anafylaxi sannolikt återkommer vid den andra och efterföljande exponeringar.\r\n\r\nDenna arketyp har utformats för att möjliggöra dokumentation av information om ett specifikt ämne (amoxicillin, ostron eller bisticksgift) eller, alternativt, en ämnesklass (till exempel penicilliner). Om en ämnesklass dokumenteras kan identifiering av det exakta ämnet dokumenteras per reaktion med hjälp av arketypen CLUSTER.adverse_reaction_event.\r\n\r\nAnvänd för att dokumentera information om förekomsten av risk för en biverkning:\r\n- för att stödja den direkta vården av en individ;\r\n- som en del av en lista över hanterade reaktioner eller allergier/intoleranser;\r\n- för att stödja utbyte av information om benägenhet och händelser relaterade till reaktioner;\r\n- för biverkningsrapportering; och\r\n- för att hjälpa till med datoriserade kunskapsbaserade aktiviteter såsom kliniska beslutsstöd och varningar.\r\n\r\nDen dokumenterade risken för en biverkningshändelse eller -manifestation ska alltid föreslå ett orsakande ämne eller ämnesklass. Om det finns en viss grad av osäkerhet om att ett specifikt ämne är orsaken kan den osäkerhetsnivån registreras med hjälp av dataelementet ”visshetsgrad”. Om mer än ett möjligt ämne kan ha orsakat en reaktion/manifestation, bör varje ämne registreras med en separat instans av arketypen denna Reaktionsrisk-arketyp med ”visshetsgrad” angiven till utgångsvärdet ”misstänkt” (enligt SoS terminologi) så att varningssystem mot aktuella reaktioner kan aktiveras i vårdinformationssystem. Om ämnet senare visar sig inte ha ett orsakssamband kan ”verifieringsstatus” ändras till ”avstyrkt” - till exempel efter allergitestning.",
+          "misuse" : "Ska inte användas för att dokumentera fysiologiska reaktioner på fysiska faktorer, såsom värme, kyla, solljus, vibrationer, träningsaktiviteter, smittämnen eller livsmedelsföroreningar. Använd en specifik arketyp för EVALUATION.problem/diagnosis eller CLUSTER.symptom/sign för det syftet.\r\n\r\nSka inte användas för att dokumentera avvikelser, inkluderande brister i verksamhetsprocesser, interventioner eller produkter. Till exempel: felaktig användning, felaktig dosering eller felaktig administrering av en faktor eller ett ämne; felmärkning; skada orsakad av en intervention eller aktivitet; överdos/förgiftning etc. Använd en specifik arketyp för det syftet.\r\n\r\nSka inte användas för att dokumentera en biverkning där ämnet är okänt. Använd i stället EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign för att dokumentera det i journalen tills ett möjligt ämne har identifierats.\r\n\r\nSka inte användas för att dokumentera reaktioner mot blodtransfusioner. Använd en specifik arketyp för det syftet.\r\n\r\nSka inte användas för att dokumentera varningar generellt. Använd EVALUATION.precaution, EVALUATION.contraindication eller relaterade arketyper för det syftet.\r\n\r\nSka inte användas för att dokumentera utebliven effekt av behandlingar.\r\n\r\nSka inte användas för dokumentation av en uttalad avsaknad av en reaktion mot \"vilken substans som helst\" eller mot identifierade substanser, till exempel \"Inga kända allergier eller biverkningar\" eller \"Inga kända allergier mot penicillin\". Använd arketyperna EVALUATION.exclusion_global eller EVALUATION.exclusion_specific för att dokumentera att biverkningar saknas.\r\n\r\nSka inte användas för att dokumentera avsaknad av information om reaktioner för patienten. Använd arketypen EVALUATION.absence för att dokumentera att information inte kunde fås, till exempel om en icke samarbetande patient vägrar besvara frågor.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en klinisk vurdering om et individs tendens til overfølsomhetsreaksjoner ved eksponering eller re-eksponering for en angitt substans eller substansklasse.",
+          "keywords" : [ "reaksjon", "allergi", "allergisk", "uønsket", "hendelse", "virkning", "effekt", "følsomhet", "intoleranse", "hypersensitivtet", "bivirkning", "toksisitet", "legemiddel", "mat", "medisinering", "medisin", "substans", "immun", "non-immun", "kjemisk", "anafylakse", "allergen", "naturmedisin", "immunologisk", "ikke-immunologisk", "non-immunologisk", "risk", "risiko", "supplement", "kosttilskudd", "tilskudd", "anafylaksi", "anafylaktisk", "naturmidler", "medikament", "ernæring", "stoff", "rusmiddel", "agens", "overfølsomhet", "atopi", "cave" ],
+          "use" : "Brukes for å registrere en klinisk vurdering om et individs tendens til overfølsomhetsreaksjoner ved fremtidig eksponering for en substans eller substansklasse. Substanser kan omfatte men er ikke begrenset til: aktive stoffer eller hjelpestoffer i legemidler, biologiske produkter, metallsalter eller organiske substanser.\r\n\t\r\nArketypen gir ett enkelt sted i pasientjournalen for å dokumentere tendensen til hele spekteret av reaksjoner, fra trivielle til livstruende:\r\n- immunmediert reaksjon - Typene I-IV (allergiske reaksjoner og hypersensitivitet)\r\n- ikke-immunmediert reaksjon - inkludert annen overfølsomhet, bivirkninger, intoleranse og legemiddeltoksisitet\r\nI klinisk praksis kan det være vanskelig å skille mellom immunmedierte og ikke-immunmedierte reaksjoner. Identifisering av reaksjonstypen er ikke et substitutt for alvorlighetsgrad eller risiko for skade på pasienten.\r\n\r\nDer en tendens er identifisert, kan informasjon eller evidens om en eller flere reaksjonshendelser registreres ved hjelp av arketypen CLUSTER.adverse_reaction_event brukt i SLOTet \"Sammendrag av reaksjonshendelse\".\r\n\r\nReaksjonsmanifestasjonens alvorlighetsgrad, dokumentert ved hjelp av arketypen CLUSTER.adverse_reaction_event, kan brukes til å utlede reaksjonsrisikoens alvorlighetsgrad. For eksempel kan anafylakse ved første eksponering for en substans være grunnlag for å sette alvorlighetsgraden til \"høy\", siden det da vil være høy risiko for en anafylaktisk reaksjon også ved andre gangs eller senere eksponeringer.\r\n\r\nDenne arketypen er designet for å tillate registrering av informasjon om en bestemt substans (f.eks. amoxycillin, østers eller biegift) eller en substansklasse (f.eks. Penicilliner). Hvis en substansklasse registreres kan den spesifikke substansen registreres per reaksjon ved hjelp av arketypen CLUSTER.adverse_reaction_event.\r\n\r\nBrukes til å registrere informasjon om at en risiko for en overfølsomhetsreaksjon er tilstede:\r\n- for å støtte direkte klinisk omsorg for et individ\r\n- som en del av en vedlikeholdt liste over overfølsomhetsreaksjoner\r\n- for å støtte utveksling av informasjon om tendenser og hendelser knyttet til overfølsomhetsreaksjoner\r\n- for å støtte rapportering av reaksjonshendelser\r\n- for å støtte kunnskapsbaserte aktiviteter som klinisk beslutningsstøtte og varsler\r\n\r\nRisikoen for en reaksjonshendelse eller reaksjonsmanifestasjon må alltid foreslår en utløsende substans eller substansklasse. Hvis det er usikkerhet om hvilken spesifikke substans som er årsak til overfølsomhetsreaksjonen, kan denne usikkerheten angis ved hjelp dataelementet \"Verifikasjonsstatus\". Dersom flere mulige substanser kan ha forårsaket en reaksjon/manifestasjon bør hver substans registreres for seg i denne arketypen med \"Verifikasjonsstatus\" i utgangspunktet satt til \"Ubekreftet\", slik at kontroll av overfølsomhetsreaksjoner kan aktiveres i kliniske systemer. Dersom en substans eller substansklasse senere viser seg å ikke være årsaken til reaksjonen, kan \"Verifikasjonsstatus\" endres til \"Avkreftet\".",
+          "misuse" : "Brukes ikke til registrering av fysiologiske reaksjoner på fysiske fenomener, som for eksempel varme, kulde, sollys, vibrasjon, treningsaktivitet, smittestoffer eller forurensninger i mat. Til dette brukes en spesifikk arketype som EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign.\r\n\r\nBrukes ikke til å registrere avvik, inkludert svikt i kliniske prosesser, intervensjoner eller produkter. For eksempel: Feil bruk, feil dosering eller feil administrasjon av en substans, feilmerking, skade forårsaket av en intervensjon eller prosedyre, overdose/forgiftning etc. Bruk en spesifikk arketype for dette formålet.\r\n\r\nBrukes ikke til å registerere en uønsket reaksjon hvor substansen er ukjent. Bruk arketypen EVALUATION.problem_diagnosis eller CLUSTER.symptom_sign for å registrere disse inntil substansen blir identifisert.\r\n\r\nBrukes ikke til å registrere reaksjoner på transfusjoner av blodkomponenter. Bruk en spesifikk arketype for dette formålet.\r\n\r\nBrukes ikke for å registrere generiske 'varsler'. Bruk EVALUATION.precaution, EVALUATION.contraindication eller relaterte arketyper for dette formålet.\r\n\r\nBrukes ikke til å registrere mislykket behandling.\r\n\r\nSkal ikke brukes for eksplisitt registrering av et fravær (eller negativ tilstedeværelse) av en reaksjon på en hvilken som helst substans eller til spesifikke substanser, for eksempel \"Ingen kjente allergier eller uønskede reaksjoner\" eller \"Ingen kjent allergi mot penicillin\". Bruk arketypene EVALUATION.exclusion_global eller EVALUATION.exclusion_specific til å uttrykke et eksplisitt utsagn om fravær av uønskede reaksjoner.\r\n\r\nSkal ikke brukes for eksplisitt registrering av at ingen informasjon er tilgjengelig om et individs status med tanke på uønskede reaksjoner. Bruk arketypen EVALUATION.absence til å registrere at informasjon ikke er tilgjengelig, for eksempel dersom en ikke-samarbeidsvillig pasient nekter å svare på spørsmål.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "pt-br" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "pt-br"
+          },
+          "purpose" : "*To record the clinical assessment of the propensity for an individual to experience an adverse reaction if exposed, or re-exposed, to a specified substance or class of substances. (en)",
+          "keywords" : [ "reação", "alergia", "alérgico", "adversa", "evento", "efeito", "sensibilidade", "intolerância", "hipersensibilidade", "efeito colateral", "toxicidade", "droga", "alimento", "agente", "substância", "imune", "não imune", "químico", "anafilaxia", "alérgeno", "medicação", "suplemento", "medicamento", "remédio natural", "imunológico", "não imunológico", "risco" ],
+          "use" : "*Use to record a clinical assessment of a propensity for an adverse reaction upon future exposure to a specified substance or class of substances including, but not limited to, incipients and excipients in medicinal preparations, biological products, metal salts, and organic chemical compounds.  \r\n\r\nThis archetype is intended to provide a single place within the health record to document the propensity for the full range of reactions, from trivial to life-threatening:\r\n- immune-mediated: Types I-IV (including allergic reactions and hypersensitivities); or \r\n- non-immune-mediated: including pseudo-allergic reactions, side effects, intolerances, and drug toxicities.\r\nIn clinical practice distinguishing between immune-mediated and non-immune-mediated reactions can be difficult. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient.\r\n\r\nIdentification of the severity of the manifestation of the reaction can inform the 'Criticality' of the adverse reaction risk - for example, experiencing anaphylaxis on first exposure to a substance would warrant setting a 'Criticality' of 'high', due to the high risk that anaphylaxis is likely to recur on second and subsequent exposures.\r\n\r\nWhere a propensity is identified, information or evidence about one or more reaction events can be recorded using the CLUSTER.adverse_reaction_event archetype in the 'Reaction event summary' SLOT.\r\n\r\nThis archetype has been designed to allow the recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (e.g. Penicillins). If a class of substance is recorded, identification of the exact substance can be recorded on a per-reaction basis using the CLUSTER.adverse_reaction_event archetype.\r\n\r\nUse to record information about the positive presence of the risk of an adverse reaction:\r\n- to support the direct clinical care of an individual; \r\n- as part of a managed adverse reaction or allergy/intolerance list; \r\n- to support the exchange of information about the propensity and events related to adverse reactions; \r\n- to inform adverse reaction reporting; and \r\n- to assist with computerised knowledge-based activities such as clinical decision support and alerts.\r\n\r\nThe risk of an adverse reaction event or manifestation must always propose a causative substance or class of substance. If there is a degree of uncertainty that a specific substance is the cause, the level of uncertainty can be recorded using the ‘Verification status’ data element. If more than one possible substance may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction risk archetype with the ‘Verification status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. If the substance is later proven not to be causal then the ‘Verification status’ can be modified to ‘Refuted’ - for example, after allergy testing.\r\n\r\nThe scope of this archetype has deliberately focused on identifying a pragmatic data set that are used in most clinical systems or will be suitable for most common clinical scenarios; however, it permits extension of the model when additional detail is required, using the 'Reaction details', 'Exposure details', and 'Reporting details' slots. An extension may be required if a specialist allergist or immunologist needed to record a more detailed assessment as part of a report to regulatory bodies or within the context of a clinical trial. (en)",
+          "misuse" : "*Not to be used for recording physiological reactions to physical agents, such as heat, cold, sunlight, vibration, exercise activity, by infectious agents or food contaminants. Use a specific archetype for EVALUATION.problem/diagnosis or CLUSTER.symptom/sign for this purpose.\r\n\r\nNot to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use, incorrect dosage or maladministration of an agent or substance; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for the purpose. \r\n\r\nNot to be used to record an adverse reaction where the substance is unknown. Use EVALUATION.problem_diagnosis or CLUSTER.symptom_sign to record as part of the health record until a possible substance is identified.\r\n\r\nNot to be used to record reactions to transfusions of blood products. Use a specific archetype for this purpose. \r\n\r\nNot to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.\r\n\r\nNot to be used for recording failed therapy.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a reaction to 'any substances' or to identified substances, for example ‘No known allergies or adverse reactions’ or ‘No known allergies to Penicillin’. Use the EVALUATION.exclusion_global or EVALUATION.exclusion_specific archetypes to express a positive statement of adverse reaction exclusion.\r\n\r\nNot to be used for the explicit recording that no information was able to be obtained about the adverse reaction status of a patient. Use the EVALUATION.absence archetype to record that a positive statement that information was not able to be obtained, for example, if a non-cooperative patient refuses to answer questions. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "el" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "el"
+          },
+          "purpose" : "*To record the clinical assessment of the propensity for an individual to experience an adverse reaction if exposed, or re-exposed, to a specified substance or class of substances.(en)",
+          "keywords" : [ "*reaction(en)", "*allergy(en)", "*allergic(en)", "*adverse(en)", "*event(en)", "*effect(en)", "*sensitivity(en)", "*intolerance(en)", "*hypersensitivity(en)", "*side effect(en)", "*toxicity(en)", "*drug(en)", "*food(en)", "*agent(en)", "*substance(en)", "*immune(en)", "*non-immune(en)", "*chemical(en)", "*anaphylaxis(en)", "*allergen(en)", "*medication(en)", "*supplement(en)", "*medicine(en)", "*natural remedies(en)", "*immunological(en)", "*non-immunological(en)", "*risk(en)" ],
+          "use" : "*Use to record a clinical assessment of a propensity for an adverse reaction upon future exposure to a specified substance or class of substances including, but not limited to, incipients and excipients in medicinal preparations, biological products, metal salts, and organic chemical compounds. \r\n\r\nThis archetype is intended to provide a single place within the health record to document the propensity for the full range of reactions, from trivial to life-threatening:\r\n- immune-mediated: Types I-IV (including allergic reactions and hypersensitivities); or \r\n- non-immune-mediated: including pseudo-allergic reactions, side effects, intolerances, and drug toxicities.\r\nIn clinical practice distinguishing between immune-mediated and non-immune-mediated reactions can be difficult. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient.\r\n\r\nWhere a propensity is identified, information or evidence about one or more reaction events can be recorded using the CLUSTER.adverse_reaction_event archetype in the 'Reaction event summary' SLOT.\r\n\r\nIdentification of the severity of the manifestation of the reaction, recorded in the CLUSTER.adverse_reaction_event archetype, can inform the 'Criticality' of the adverse reaction risk. For example, experiencing anaphylaxis on first exposure to a substance would warrant setting a 'Criticality' of 'high', due to the high risk that anaphylaxis is likely to recur on second and subsequent exposures.\r\n\r\nThis archetype has been designed to allow the recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (e.g. Penicillins). If a class of substance is recorded, identification of the exact substance can be recorded on a per-reaction basis using the CLUSTER.adverse_reaction_event archetype.\r\n\r\nUse to record information about the positive presence of the risk of an adverse reaction:\r\n- to support the direct clinical care of an individual; \r\n- as part of a managed adverse reaction or allergy/intolerance list; \r\n- to support the exchange of information about the propensity and events related to adverse reactions; \r\n- to inform adverse reaction reporting; and \r\n- to assist with computerised knowledge-based activities such as clinical decision support and alerts.\r\n\r\nThe risk of an adverse reaction event or manifestation must always propose a causative substance or class of substance. If there is a degree of uncertainty that a specific substance is the cause, the level of uncertainty can be recorded using the ‘Verification status’ data element. If more than one possible substance may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction risk archetype with the ‘Verification status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. If the substance is later proven not to be causal then the ‘Verification status’ can be modified to ‘Refuted’ - for example, after allergy testing.(en)",
+          "misuse" : "*Not to be used for recording physiological reactions to physical agents, such as heat, cold, sunlight, vibration, exercise activity, by infectious agents or food contaminants. Use a specific archetype for EVALUATION.problem/diagnosis or CLUSTER.symptom/sign for this purpose.\r\n\r\nNot to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use, incorrect dosage or maladministration of an agent or substance; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for the purpose. \r\n\r\nNot to be used to record an adverse reaction where the substance is unknown. Use EVALUATION.problem_diagnosis or CLUSTER.symptom_sign to record as part of the health record until a possible substance is identified.\r\n\r\nNot to be used to record reactions to transfusions of blood products. Use a specific archetype for this purpose. \r\n\r\nNot to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.\r\n\r\nNot to be used for recording failed therapy.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a reaction to 'any substances' or to identified substances, for example ‘No known allergies or adverse reactions’ or ‘No known allergies to Penicillin’. Use the EVALUATION.exclusion_global or EVALUATION.exclusion_specific archetypes to express a positive statement of adverse reaction exclusion.\r\n\r\nNot to be used for the explicit recording that no information was able to be obtained about the adverse reaction status of a patient. Use the EVALUATION.absence archetype to record that a positive statement that information was not able to be obtained, for example, if a non-cooperative patient refuses to answer questions.(en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record the clinical assessment of the propensity for an individual to experience an adverse reaction if exposed, or re-exposed, to a specified substance or class of substances.",
+          "keywords" : [ "reaction", "allergy", "allergic", "adverse", "event", "effect", "sensitivity", "intolerance", "hypersensitivity", "side effect", "toxicity", "drug", "food", "agent", "substance", "immune", "non-immune", "chemical", "anaphylaxis", "allergen", "medication", "supplement", "medicine", "natural remedies", "immunological", "non-immunological", "risk" ],
+          "use" : "Use to record a clinical assessment of a propensity for an adverse reaction upon future exposure to a specified substance or class of substances including, but not limited to, incipients and excipients in medicinal preparations, biological products, metal salts, and organic chemical compounds. \r\n\r\nThis archetype is intended to provide a single place within the health record to document the propensity for the full range of reactions, from trivial to life-threatening:\r\n- immune-mediated: Types I-IV (including allergic reactions and hypersensitivities); or \r\n- non-immune-mediated: including pseudo-allergic reactions, side effects, intolerances, and drug toxicities.\r\nIn clinical practice distinguishing between immune-mediated and non-immune-mediated reactions can be difficult. Identification of the type of reaction is not a proxy for seriousness or risk of harm to the patient.\r\n\r\nWhere a propensity is identified, information or evidence about one or more reaction events can be recorded using the CLUSTER.adverse_reaction_event archetype in the 'Reaction event summary' SLOT.\r\n\r\nIdentification of the severity of the manifestation of the reaction, recorded in the CLUSTER.adverse_reaction_event archetype, can inform the 'Criticality' of the adverse reaction risk. For example, experiencing anaphylaxis on first exposure to a substance would warrant setting a 'Criticality' of 'high', due to the high risk that anaphylaxis is likely to recur on second and subsequent exposures.\r\n\r\nThis archetype has been designed to allow the recording of information about a specific substance (amoxycillin, oysters, or bee sting venom) or, alternatively, a class of substance (e.g. Penicillins). If a class of substance is recorded, identification of the exact substance can be recorded on a per-reaction basis using the CLUSTER.adverse_reaction_event archetype.\r\n\r\nUse to record information about the positive presence of the risk of an adverse reaction:\r\n- to support the direct clinical care of an individual; \r\n- as part of a managed adverse reaction or allergy/intolerance list; \r\n- to support the exchange of information about the propensity and events related to adverse reactions; \r\n- to inform adverse reaction reporting; and \r\n- to assist with computerised knowledge-based activities such as clinical decision support and alerts.\r\n\r\nThe risk of an adverse reaction event or manifestation must always propose a causative substance or class of substance. If there is a degree of uncertainty that a specific substance is the cause, the level of uncertainty can be recorded using the ‘Verification status’ data element. If more than one possible substance may have caused a reaction/manifestation, each substance should be recorded using a separate instance of this adverse reaction risk archetype with the ‘Verification status’ set to an initial state of ‘Unconfirmed’ so that adverse reaction checking can be activated in clinical systems. If the substance is later proven not to be causal then the ‘Verification status’ can be modified to ‘Refuted’ - for example, after allergy testing.",
+          "misuse" : "Not to be used for recording physiological reactions to physical agents, such as heat, cold, sunlight, vibration, exercise activity, by infectious agents or food contaminants. Use a specific archetype for EVALUATION.problem/diagnosis or CLUSTER.symptom/sign for this purpose.\r\n\r\nNot to be used to record adverse events, including failures of clinical process, interventions or products. For example: abnormal use, incorrect dosage or maladministration of an agent or substance; mislabelling; harm or injury caused by an intervention or procedure; overdose/poisoning etc. Use a specific archetype for the purpose. \r\n\r\nNot to be used to record an adverse reaction where the substance is unknown. Use EVALUATION.problem_diagnosis or CLUSTER.symptom_sign to record as part of the health record until a possible substance is identified.\r\n\r\nNot to be used to record reactions to transfusions of blood products. Use a specific archetype for this purpose. \r\n\r\nNot to be used for recording 'alerts'. Use EVALUATION.precaution, EVALUATION.contraindication or related archetypes for this purpose.\r\n\r\nNot to be used for recording failed therapy.\r\n\r\nNot to be used for the explicit recording of an absence (or negative presence) of a reaction to 'any substances' or to identified substances, for example ‘No known allergies or adverse reactions’ or ‘No known allergies to Penicillin’. Use the EVALUATION.exclusion_global or EVALUATION.exclusion_specific archetypes to express a positive statement of adverse reaction exclusion.\r\n\r\nNot to be used for the explicit recording that no information was able to be obtained about the adverse reaction status of a patient. Use the EVALUATION.absence archetype to record that a positive statement that information was not able to be obtained, for example, if a non-cooperative patient refuses to answer questions.",
+          "copyright" : "© Australian Digital Health Agency, openEHR Foundation, HL7 International, Nasjonal IKT",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "es" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "es"
+          },
+          "purpose" : "Registrar la evaluación cínica de la propensión de un paciente a experimentar una reacción adversa en caso de exposición, o reexposición, de una substancia específica o substancias de otra categoría.",
+          "keywords" : [ "reacción", "alergia", "alérgico", "adverso", "evento", "efecto", "sensibilidad", "intolerancia", "hipersensibilidad", "efecto secundario", "toxicidad", "medicamento", "alimentos", "agente", "substancia", "inmune", "no inmune", "químico", "anafiláctico", "alergeno", "medicación", "suplemento", "medicina", "remedio natural", "inmunológico", "no inmunológico", "riesgo" ],
+          "use" : "Usar para registrar una evaluación clínica de una propensión a una reacción adversa ante una futura exposición a una sustancia específica o a otra categoría de sustancias, incluidas, pero no limitadas a, excipientes y principios activos en los medicamentos, productos biológicos, sales metálicas y compuestos químicos orgánicos.\r\n\r\nEste arquetipo tiene como objetivo proporcionar un único lugar dentro de la historia clínica para documentar la propensión a todo tipo de reacciones, desde las triviales hasta las mortales:\r\n\r\nInmunomediadas: Tipo I-IV (incluidas reacciones alérgicas e hipersensibilidad); o\r\n\r\nNo inmunomediadas: incluidas reacciones pseudoalérgicas, efectos secundarios, intolerancias y toxicidad medicamentosa.\r\n\r\nEn la práctica clínica, puede resultar difícil distinguir entre las reacciones inmunomediadas y no inmunomediadas. Identificar el tipo de reacción no implica necesariamente una indicación de la gravedad o el riesgo de daño para el paciente.\r\n\r\nCuando se identifica una propensión, se puede registrar la información o evidencia de uno o más eventos de reacción mediante el uso del arquetipo CLUSTER.adverse_reaction_event dentro del SLOT «Resumen de eventos de reacción».\r\n\r\nIdentificar la gravedad de la manifestación de la reacción, registrada en el arquetipo CLUSTER.adverse_reaction_event, puede indicar la \"criticidad\" del riesgo de una reacción adversa. Por ejemplo, sufrir anafilaxia en la primera exposición a una sustancia justificaría clasificar la \"criticidad\" como \"Alta\", ya que existe un alto riesgo de que la anafilaxia vuelva a ocurrir en exposiciones posteriores.\r\n\r\nEste arquetipo ha sido diseñado para permitir el registro de información sobre sustancias específicas (amoxicilina, ostras, o el veneno de una picadura de abeja) o, alternativamente, sobre una categoría de sustancias (p. ej., penicilina). Si no se ha registrado una categoría de sustancias, la identificación de la sustancia exacta puede hacerse en una base por reacción, utilizando el arquetipo CLUSTER.adverse_reaction_event.\r\n\r\nUsar la información registrada sobre la existencia positiva de un riesgo de reacción adversa:\r\n\r\n- Para apoyar la atención clínica directa del paciente;\r\n- Como parte de una lista controlada de reacciones adversas o como lista de alergias/intolerancias;\r\n- Para facilitar el intercambio de información sobre la propensión y eventos relacionados con reacciones adversas;\r\n- Para la elaboración de informes de reacciones adversas, y\r\n- Para apoyar actividades informatizadas basadas en el conocimiento, como ayudas a la decisión y alertas clínicas.\r\n\r\nEl riesgo de un evento de reacción adversa o de una manifestación siempre sugiere una sustancia o categoría de sustancias causante. Si existe cierto grado de incertidumbre respecto a que una sustancia específica sea la causa, dicho nivel de incertidumbre puede registrarse utilizando los datos de \"Estado de verificación\". Si varias sustancias pudieran ser las causantes de una reacción o manifestación, cada sustancia debe registrarse utilizando una instancia separada de este arquetipo de riesgo de reacción adversa, con el campo de \"Estado de verificación\" inicialmente establecido como \"No confirmado\". De este modo, la comprobación de reacciones adversas puede activarse en los sistemas clínicos. Si posteriormente se demuestra que la sustancia no fue la causa, entonces el \"Estado de verificación\" puede modificarse a \"Refutado\", por ejemplo, tras realizar pruebas de alergia.",
+          "misuse" : "No usar para registrar reacciones fisiológicas provocadas por agentes físicos, como el calor, el frío, la luz solar, la vibración, las actividades deportivas, agentes infecciosos o contaminantes alimentarios. Para este propósito, utilizar un arquetipo específico como EVALUATION.problem_diagnosis o CLUSTER.symptom_sign.\r\n\r\nNo usar para registrar eventos adversos, incluidas fallas en procesos, intervenciones o productos clínicos. Por ejemplo: uso indebido, dosificación incorrecta o mala administración de un agente o sustancia; error de etiquetado; sobredosis/envenenamiento, etc. Para ello, utilizar un arquetipo específico.\r\n\r\nNo usar para registrar reacciones adversas cuando la sustancia es desconocida. En estos casos, utilizar EVALUATION.problem_diagnosis o CLUSTER.symptom_sign como parte de la historia clínica, hasta que se identifique una posible sustancia causante.\r\n\r\nNo usar para registrar reacciones a transfusiones de productos sanguíneos. Utilizar un arquetipo específico para ese propósito.\r\n\r\nNo usar para registrar “alertas”. Para ello, utilizar EVALUATION.precaution, EVALUATION.contraindication o arquetipos relacionados con ese fin.\r\n\r\nNo usar para registrar terapias fallidas.\r\n\r\nNo usar para registrar explícitamente la ausencia (o ausencia negativa) de una reacción a “ninguna sustancia” o a sustancias específicas, por ejemplo: “Alergias o reacciones adversas desconocidas” o “Ninguna reacción alérgica conocida a la penicilina”. En estos casos, utilizar el arquetipo EVALUATION.exclusion_global o EVALUATION.exclusion_specific para expresar una declaración positiva de exclusión de una reacción adversa.\r\n\r\nNo usar para registrar explícitamente que no se pudo obtener información sobre el estado de reacciones adversas del paciente. Para ello, utilizar el arquetipo EVALUATION.absence para documentar, mediante una declaración positiva, que no se ha podido obtener información, por ejemplo, cuando un paciente no cooperativo se niega a responder preguntas.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "ca" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "ca"
+          },
+          "purpose" : "Registrar l'avaluació clínica de la propensió d’un pacient d’experimentar una reacció adversa en cas d'exposició, o reexposició, d'una substància específica o substàncies d’una altra categoria.",
+          "keywords" : [ "reacció", "al·lèrgia", "al·lèrgic", "advers", "esdeveniment", "efecte", "sensibilitat", "intolerància", "hipersensibilitat", "efecte secundari", "toxicitat", "medicament", "aliments", "agent", "substància", "immune", "no immune", "químic", "anafilaxi", "al·lergen", "medicació", "suplement", "medicina", "remeis naturals", "immunològic", "no-immunològic", "risc" ],
+          "use" : "Utilitzar per a registrar una avaluació clínica d’una propensió a una reacció adversa de cap a una futura exposició a una substància específica o a una altra categoria de substàncies, inclosos, però sense limitar-se a, incipients i excipients en els medicaments, productes biològics, sals metàl·liques, i compostos químics orgànics. \r\n\r\nAquest arquetip pretén proporcionar un únic lloc dins de la història clínica per a documentar la propensió de tota mena de reaccions, des de les trivials fins a les mortals: \r\n\r\n- immunomediades: Tipus I-IV (incloses reaccions al·lèrgiques i hipersensibilitat); o\r\n\r\n- no immunomediades: incloses reaccions pseudoal·lèrgiques, efectes secundaris, intoleràncies i toxicitat dels medicaments. \r\n\r\nEn la pràctica clínica, distingir entre les reaccions immunomediades i no immunomediades pot resultat difícil. Identificar el tipus de recció no és un indici de la gravetat o el risc de dany per al pacient. \r\n\r\nQuan s'identifica una propensió, es pot registrar la informació o l'evidència d'un o més esdeveniments de reacció mitjançant l'ús de l’arquetip CLUSTER.adverse_reaction_event dins del SLOT «Sumari d’esdeveniments de reacció». \r\n\r\nIdentificar la gravetat de la manifestació de la reacció, registrada en l'arquetip CLUSTER.adverse_reaction_event pot indicar la «Criticitat» del risc d’una reacció adversa. Per exemple, sofrir anafilaxi en la primera exposició a una substància justificaria la fixació de la «Criticitat» com a «Elevada», com que el risc elevat d'anafilaxi pot tornar a ocórrer en segones i subseqüents exposicions. \r\n\r\nAquest arquetip s’ha dissenyat per a permetre l'enregistrament de la informació de substàncies específiques (amoxicil·lina, ostres, o el verí d’una picada d’abella) o, alternativament, una categoria de substàncies (ex. Penicil·lina). Si una categoria de substàncies no es troba registrada, la identificació de la substància exacta es pot registrar en una base de perreacció utilitzant l’arquetip CLUSTER.adverse_reaction_event. \r\n\r\nUtilitzar la informació registrada de la presència positiva de risc d'una reacció adversa:\r\n\r\n- per ajudar al cuidat clínic directe d'un pacient; \r\n\r\n- com a part d'una reacció adversa controlada o com a llista d'al·lèrgies/intoleràncies;\r\n\r\n- per ajudar a l’intercanvi d'informació sobre la propensió i esdeveniments relacionats amb les reaccions adverses; \r\n\r\n- per informar d'un informe de reacció adversa, i\r\n\r\n- per ajudar en les activitats informatitzades basades en el coneixement, com ajudes a les decisions i alertes clíniques. \r\n\r\nEl risc d’un esdeveniment de reacció adversa o d’una manifestació suggereix sempre una substància o categoria de substàncies causant. Si existeix un cert grau d’incertesa que una substància específica sigui la causa, el nivell d’incertesa es pot registrar utilitzant les dades «Estat de verificació». Si més d’una substància poden ser les causants d’una reacció/manifestació, cada substància s’ha de registrar utilitzant una instància separada d’aquest arquetip de risc de reacció adversa amb el nom d'«Estat de verificació», establert en un inici com «No confirmat». D’aquesta manera la comprovació de la reacció adversa es pot activar en els sistemes clínics. Si es prova posteriorment que la substància no ha sigut la causant, doncs «L’estat de verificació» es pot modificar a «Refutat», per exemple, després d’unes proves d’al·lèrgia.",
+          "misuse" : "No utilitzar per a registrar reaccions fisiològiques d’agents físics, com la calor, el fred, la llum solar, la vibració, les activitats esportives, per agents infecciosos o contaminants alimentaris. Utilitzar un arquetip específic EVALUATION.problem/diagnosis o CLUSTER.symptom/sign per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar esdeveniments adversos, incloses les errades en els processos, intervencions o productes clínics. Per exemple, ús indegut, dosificació incorrecta o mala administració d’un agent o substància; error d’etiquetatge; sobredosi/enverinament, etc. Utilitzar un arquetip específic per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar reaccions adverses quan la substància és desconeguda. Utilitzar EVALUATION.problem_diagnosis o CLUSTER.symptom_sign per a registrar com a part d’una història clínica fins que s’identifiqui una possible substància. \r\n\r\nNo utilitzar per a registrar reaccions a transfusions de productes sanguinis. Utilitzar un arquetip específic per aquesta finalitat. \r\n\r\nNo utilitzar per a registrar «alertes». Utilitzar EVALUATION.precaution, EVALUATION.contraindication o arquetips relacionats amb aquesta finalitat. \r\n\r\nNo utilitzar per a registrar teràpies fallides. \r\n\r\nNo utilitzar per a l’enregistrament explícit d’una absència (o absència negativa) d’una reacció a «Cap substància» o a substàncies identificades, per exemple «Al·lèrgies o reaccions adverses desconegudes» o «Cap reacció al·lèrgica coneguda a la Penicil·lina». Utilitzar l’arquetip EVALUATION.exclusion_global o EVALUATION.exclusion_specific per a expressar una afirmació positiva de l’exclusió d’una reacció adversa. \r\n\r\nNo utilitzar per a l’enregistrament explícit de què cap informació no es va poder obtindre sobre l’estat de la reacció adversa del pacient. Utilitzar l’arquetip EVALUATION.absence per a registrar que d’una declaració positiva, no s’ha pogut obtindre informació, per exemple, si un pacient no cooperatiu nega respondre les qüestions.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "annotations" : {
       "@type" : "RESOURCE_ANNOTATIONS",
@@ -1651,7 +1838,54 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "61C7497C638C0C808F55166F2059C97E"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Schaffung eines Rahmens für die Erfassung von Antworten auf vordefinierte Screening-Fragen zur Reisetätigkeit.",
+          "keywords" : [ "Reise, Fahrt, Ausflug, Übersee, inländisch, Inland, lokal, national, Ausland, Auslandsreise, international, Schiff, Seereise." ],
+          "use" : "Zur Darstellung eines Schemas für die Aufzeichnung von Antworten auf vordefinierte Screening-Fragen zur Reisetätigkeit.\r\n\r\nHäufige Anwendungsfälle sind unter anderem:\r\n- Überwachung von Infektionskrankheiten\r\n- Erstellung eines Patientenprofils in einem Krankheitsregister\r\n- Systematische Befragung im Rahmen einer Konsultation im Zusammenhang mit Krankheitsmustern.\r\n\r\nDie Semantik dieses Archetyps ist absichtlich freier, und eine Abfrage dieses Archetyps wäre normalerweise nur im Kontext der jeweiligen Vorlage sinnvoll oder sicher. Jedes Datenelement wird in der Regel in einer Vorlage umbenannt, um die spezifische Frage darzustellen. Wenn Wertemengen für allgemeine Anwendungsfälle vorgeschlagen wurden, können diese an die lokalen Anforderungen angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN verwendet werden, um jedem spezifischen Anwendungsfall zu entsprechen.\r\n\r\nDie Verwendung dieses Schemas in einer Vorlage ermöglicht die Dokumentation eines breiten Spektrums von Frage-Antwort-Paaren, wie z. B.:\r\n- Waren Sie in den letzten 6 Wochen im Ausland? Ja, Nein, Unsicher.\r\n- Sind Sie im letzten Jahr nach Afrika gereist? Ja, Nein, Unsicher.\r\n- Ist der Patient in den letzten 2 Wochen in ein Gebiet gereist, in dem Malaria endemisch ist? Ja, Nein, Unbekannt.\r\n- Ist der Patient jemals in ein aktives Kriegsgebiet gereist? Ja, Nein, Unbekannt.\r\n\r\nDie EVENT-Struktur aus dem Referenzmodell kann verwendet werden, um anzugeben, ob sich die Fragen auf einen bestimmten Zeitpunkt oder auf einen Zeitraum beziehen. Verwenden Sie eine separate Instanz dieses Archetyps, um zwischen einem Fragebogen zu unterscheiden, der Informationen über Untersuchungen oder Tests aufzeichnet, die zu einem beliebigen Zeitpunkt in der Vergangenheit durchgeführt wurden, und einem Fragebogen, der Informationen über Untersuchungen oder Tests enthält, die innerhalb eines bestimmten Zeitintervalls durchgeführt wurden – zum Beispiel der Unterschied zwischen „Sind Sie jemals in ein Gebiet mit hoher Strahlungsaktivität gereist?“ und „Sind Sie in den letzten vier Wochen in ein Gebiet mit hoher Strahlungsaktivität gereist?“\r\nDie Quelle der Informationen in einer Fragebogenantwort kann in verschiedenen Kontexten variieren, kann aber mit Hilfe des Elements \"Informationsanbieter\" im Referenzmodell spezifisch identifiziert werden.\r\n\r\nDieser Archetyp wurde für die Verwendung als Screening-Instrument oder für die Aufzeichnung einfacher Daten im Fragebogenformat zur Verwendung in Situationen wie einem Krankheitsregister konzipiert. Wenn der Screening-Fragebogen angibt, dass eine Untersuchung durchgeführt wurde, können zusätzliche Details, die für die Persistenz als Teil einer klinischen Akte erforderlich sind, mit Hilfe spezifischer Archetypen für Testergebnisse erfasst werden.\r\n",
+          "misuse" : "Nicht für die Aufzeichnung eines Reiseverlaufs zu verwenden - verwenden Sie zu diesem Zweck ADMIN_ENTRY.travel_event.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å lage et rammeverk for registrering av svar på forhåndsdefinerte kartleggingsspørsmål om reiseaktivitet til eller fra ett eller flere geografiske steder utenfor personens vanlige bosted.\r\n",
+          "keywords" : [ "reise, utenlandsreise, innenlands, lokal, nasjonal, internasjonal  ferie, ferietur, utenlandsferie, tur, sjøreise." ],
+          "use" : "Brukes til å lage et rammeverk for å registrere svar på forhåndsdefinerte kartleggingsspørsmål om reiseaktivitet til eller fra ett eller flere geografiske steder utenfor personens vanlige bosted, for eksempel for å kartlegge mulig opphold i et katastrofeområde eller mulig eksponering for et smittestoff.\r\n\r\nBruksområder inkluderer, men er ikke begrenset til:\r\n- overvåkning av smittsomme sykdommer\r\n- opprettelse av pasientprofil i et sykdomsregister\r\n- systematiske spørsmål i hvilken som helst konsultasjon relatert til sykdomsmønster\r\n \r\nSemantikken i denne arketypen er med overlegg løst definert, og spørringer etter data i arketypen vil vanligvis kun være hensiktsmessig eller sikkert innenfor konteksten av et spesifikt templat. Hvert dataelement vil normalt sett bli døpt om i templatet for å representere den spesifikke spørsmålsstillingen. Flere steder er det foreslått verdisett som passer til de vanligste bruksområder, men det er allikevel mulig å tilpasse/endre verdisett for lokal bruk ved å benytte de alternative datatypene DV_TEXT eller DV_BOOLEAN i stedet.\r\n\r\n \r\nÅ bruke dette rammeverket i et templat tillater dokumentasjon av et bredt spekter av spørsmål/svar som f.eks.:\r\n- Har du vært i utlandet i løpet av de siste 6 ukene? Ja, Nei, Usikker.\r\n- Har du reist til Afrika i løpet av de siste 12 månedene? Ja, Nei, Usikker.\r\n- Har pasienten reist til et område der malaria er endemisk i løpet av de siste 2 ukene? Ja, Nei, Ukjent.\r\n- Har pasienten noen gang reist til en aktiv krigssone? Ja, Nei, Ukjent.\r\n \r\nEVENT-strukturen fra referansemodellen kan brukes til å spesifisere om spørsmålene er relatert til et tidspunkt eller et tidsintervall. Bruk en separat instans av denne arketypen for å skille mellom spørsmål om undersøkelser eller tester som er gjort når som helst i fortiden og spørsmål om undersøkelser eller tester som er gjort i et spesifikt tidsintervall - for eksempel forskjellen mellom \"Har du reist i et område med høy radioaktiv aktivitet?\" og \"Har du reist i et område med høy radioaktiv aktivitet i løpet av de siste fire ukene?\".\r\n \r\nKilden til informasjonen i et spørreskjema kan variere i ulike kontekster, men kan spesifiseres ved å bruke elementet \"Information provider\" i openEHR-referansemodellen.\r\n \r\nDenne arketypen er utformet for å brukes som et kartleggingsverktøy eller for å lagre enkle spørreskjema-data for bruk i f.eks. sykdomsregister. Hvis kartleggingsskjemaet avdekker en reiseaktivitet som har funnet sted, kan tilleggsopplysninger som kreves for varig dokumentasjon (persistens) i en klinisk journal registreres ved hjelp av relevante arketyper.",
+          "misuse" : "Denne arketypen skal ikke brukes til å registrere en komplett reisehistorikk. Bruk i stedet ADMIN_ENTRY.travel_event til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To create a framework for recording answers to pre-defined screening questions about  movement to or from one or more geographic locations outside of the individual’s usual place ofresidence.",
+          "keywords" : [ "travel, overseas, domestic, local, national, abroad, international, journey, trip, voyage." ],
+          "use" : "Use to create a framework for recording answers to pre-defined screening questions about movement to or from one or more geographic\r\nlocations outside of the individual’s usual place of residence,  for example to survey for possible stay within a disaster area or for possible\r\nexposure to an infectious agent.\r\n\r\nCommon use cases include, but are not limited to:\r\n- Infectious disease surveillance\r\n- Creating a patient profile in a disease registry\r\n- Systematic questioning in any consultation related to patterns of disease.\r\n\r\nThe semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. Each data element would usually be renamed in a template to represent the specific question asked. Where value sets have been proposed for common use cases, these can be adapted to align with local requirements by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. \r\n\r\nUtilising this framework within a template can enable documentation of a broad range of question/answer pairs such as:\r\n- Have you been overseas in the past 6 weeks? Yes, No, Unsure.\r\n- Have you travelled to Africa in the past 1 year? Yes, No, Unsure.\r\n- Has the patient travelled to an area where malaria is endemic in the past 2 weeks? Yes, No, Unknown.\r\n- Has the patient ever travelled to an active war zone? Yes, No, Unknown.\r\n\r\nThe EVENT structure from the reference model can be used to specify whether the questions relate to a specific point in time or a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about an investigation or test that has been done at any time in the past and information about an investigation or test done within a specified time interval - for example, the difference between \"Have you ever travelled to an area with high radiation activity?\" and \"Have you travelled to an area with high radiation activity during the last four weeks?\".\r\n\r\nThe source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.\r\n\r\nThis archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies a travel activity tha has been carried out, additional details required for persistence as part of a clinical record can be captured using relevant archetypes.",
+          "misuse" : "Not to be used for recording a travel history - use ADMIN_ENTRY.travel_event for this purpose.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.travel_screening.v1",
     "differential" : true,
@@ -1732,7 +1966,39 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "871F6A0869B1769754FFE382C7D24243"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et sammendrag om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd.",
+          "keywords" : [ "stoff", "avhengighet", "misbruk", "doping", "rus", "narkotika", "vanedannende", "prestasjonsfremmende", "anabole steroider" ],
+          "use" : "Brukes for å registrere et sammendrag om bruksmønsteret individet vanligvis har av en spesifikk substans eller klasse av substanser som kan ha skadelige effekter på individets helse eller sosiale velferd.\r\n\r\nDenne arketypen har blitt utformet som et rammeverk for objektivt å kunne dokumentere bruk eller administrasjon av en enkelt substans. Selv om arketypen støtter å kunne identifisere misbruk og avhengighet, er den ikke utelukkende ment for det formålet.\r\n\r\nSubstanser som kommer inn under denne arketypen inkluderer skadelige eller potensielt vanedannende substanser, i tillegg til medikamenter som misbrukes. Misbruket kan innbefatte administrasjon utenfor klinisk kontroll, bruk utenfor det tiltenkte formålet eller i mengder eller hyppighet som overstiger trygg dosering. Eksempler av slike substanser som kan registeres ved å bruke denne arketypen er, men er ikke begrenset til:\r\n\r\n- koffein\r\n- nikotin og andre komponenter av klinisk betydning i væske som dampes (vaping juices)\r\n- psykostimulanter\r\n- barbiturater\r\n- cannabis\r\n- hallusinogener\r\n- opioider\r\n- GHB\r\n- MDMA\r\n- sniffing av hydrokarboner eller andre væsker\r\n- \"bath salts\" og\r\n- administrasjon av terapeutiske susbstanser, som for eksempel avføringsmidler for andre formål enn obstipasjon, betablokkere for å redusere hjertefrekvens hos toppidrettsutøvere og anabole steroider hos vektløftere.\r\n\r\nPå den andre side, substanser som vanligvis blir registrert i pasientjournaler, og som har en veldokumentert skadeprofil og som blir registrert i eksisterende arketyper laget for formålet er unntatt fra bruksområdet for denne arketypen, og inkluderer:\r\n\r\n- Røykeanamnese,\r\n- Røykfri tobakksanamnese,\r\n- Damping (Vaping),\r\n- Alkoholanamese, og\r\n- Administrasjon av legemidler i henhold til etablerte medisinske retningslinjer, inkludert rett dose og korrekt indikasjon, timing og administrasjonsvei.\r\n\r\nDenne arketypen er tenkt brukt for å registrere både nåværende og tidligere bruk av en substans, og kan bli oppdatert over tid.\r\n\r\nClusteret \"Episode\" gjør det mulig å registrere detaljer innen en spesifisert tidsperiode. Triggere for å avslutte en episode og starte en ny vil i stor grad reflektere lokale preferanser for datainnsamling. En ny instans av \"Episode\" bør imidlertid bli startet hvis personen:\r\n- endrer mengde, bruksmønster eller administrasjonsvei betydelig, eller\r\n- slutter i en signifikant periode.\r\n\r\nDamping (\"Vaping\") av substanser er et konsept som krever fokus både på adferd og de substansene som inhaleres. I en slik kontekst, bruk denne arketypen for å registrere mengde av identifiserte ingredienser i væsken som fordampes, som nikotin, og bruk arketypen EVALUATION.vaping_summary for selve dampeadferden. I noen tilfeller er det nødvendig å bruke begge arketypene.\r\n\r\nBruk en egen instans av denne arketypen for å registrere hver enkelt substans.",
+          "misuse" : "Skal ikke brukes til å registrere et sammendrag om tobakksbruk. Bruk EVALUATION.tobacco_smoking_summary (Røykeanamnese) eller EVALUATION.smokeless_tobacco_summary (Røykfri tobakkanamnese) til dette formålet.\r\n\r\nSkal ikke brukes til å registrere et sammendrag om damping (vaping). Bruk EVALUATION.vaping_summary eller lignende til dette formålet.\r\n\r\nSkal ikke brukes til å registrere et sammendrag om alkoholbruk. Bruk EVALUATION.alcohol_use_summary (Alkoholanamnese) til dette formålet.\r\n\r\nSkal ikke brukes for å registrere et sammendrag om, eller monitorere samlet dose av et legemiddel. Bruk EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.\r\n\r\nSkal ikke brukes til å registrere informasjon om den faktiske bruken av substansen på en gitt tid eller i et tidsintervall, som for eksempel et gjennomsnittlig forbruk i en spesifisert periode eller i en daglig registrering. Bruk arketypen OBSERVATION.substance_use til dette formålet.\r\n\r\nSkal ikke brukes til å registrere feilmedisinering eller eksponering av en substans eller medikasjon, overdose eller forgiftninger. Bruk en av arketypene som handler om overfølsomhetsreaksjon eller eksponering til dette formålet.\r\n\r\nSkal ikke brukes for spørreskjemalignede registreringer om substansbruk, eksempelvis \"Har du brukt kokain siste uke?\". Bruk arketypen OBSERVATION.substance_use_screening til dette formålet.\r\n\r\nSkal ikke brukes til å registrere informasjon om legemidler som er gitt under klinisk kontroll for det tiltenkte formålet og i passende doser. Bruk en passende arketype innenfor gruppen av legemiddelarketyper til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record summary or persistent information about the typical use of a specific substance or class of substances that may harm an individual's health or social well-being.",
+          "keywords" : [ "drugs, addiction, abuse, doping, narcotics, performance enhancing, steroids" ],
+          "use" : "Use to record summary or persistent information about the typical use of a specific substance or class of substances that may harm an individual's health or social well-being.\r\n\r\nThis archetype has been designed as a framework for objectively documenting the use or administration of a single substance. While it supports the recognition of abuse and dependence, it is not intended exclusively for this purpose.\r\n\r\nSubstances that fall within the scope of this archetype include harmful or potentially addictive substances as well as medications that are misused. Misuse may involve administration without clinical supervision, use for non-recommended purposes, or consumption in quantities or frequencies that exceed safe dosages. Examples of substances that may be recorded using this archetype include but are not limited to:\r\n- caffeine;\r\n- nicotine and other clinically significant components of vaping liquid;\r\n- psychostimulants; \r\n- barbiturates; \r\n- cannabis; \r\n- hallucinogens; \r\n- opioids; \r\n- GHB; \r\n- MDMA; \r\n- sniffing of hydrocarbons or other solvents; \r\n- \"bath salts\"; and\r\n- medication administration, such as a laxative for purposes other than relief of constipation, beta blockers to reduce the heart rate in elite athletes and anabolic steroids in weight lifters.\r\n\r\nOn the other hand, substances that are commonly recorded in health records, have a well-documented harm profile and are recorded using existing purpose-specific archetypes, are excluded from the scope of this archetype, including:\r\n- tobacco smoking;\r\n- smokeless tobacco use;\r\n- vaping;\r\n- alcohol consumption; and \r\n- medication administration according to established medical guidelines and standards, including the correct dosage and appropriate indication, timing and route of administration.\r\n\r\nThis archetype is intended to be used to record information about both current and previous substance use behaviour patterns and can be updated over time.\r\n\r\nThe 'Episode' Cluster allows the recording of details within a specified period of time. Triggers for closing one episode and commencing a new one will largely reflect local data collection preferences, however, a new instance of the ‘Episode’ CLUSTER should be used if:\r\n- the typical amount used or administered, the pattern of use or the route of administration changes significantly; or\r\n- the individual quits for a significant period of time.\r\n\r\nVaping is a complex concept that requires attention to both the behaviour and the substances inhaled. In that context, use this archetype to record amounts of clinically significant ingredients of vaping liquid, such as 'Nicotine', and use EVALUATION.vaping_summary to record the patterns of vaping behaviour. In some cases, both archetypes may be required.\r\n\r\nUse a separate instance of this archetype to record each substance.",
+          "misuse" : "Not to be used to record summary or persistent information about tobacco smoking. Use EVALUATION.tobacco_smoking_summary for this purpose.\r\n\r\nNot to be used to record summary or persistent information about smokeless tobacco use. Use EVALUATION.smokeless_tobacco_summary for this purpose.\r\n\r\nNot to be used to record the summary or persistent information about vaping behaviour. Use an EVALUATION.vaping_summary or similar, yet to be developed.\r\n\r\nNot to be used to record summary or persistent information about alcohol consumption. Use EVALUATION.alcohol_use_summary for this purpose.\r\n\r\nNot to be used to record the summary or persistent information about, or monitor the cumulative dose of, a medication. Use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record information about actual substance use at or during a specified point or interval of time, such as daily or average use over a specified period of time, or a diary of use. Use the OBSERVATION.substance_use archetype for this purpose..\r\n\r\nNot to be used to record accidental administration of, or exposure to, a substance or medication, overdoses or poisonings, etc. Use an Adverse event archetype for this purpose.\r\n\r\nNot to be used to record answers to pre-defined screening questions about substance use. Use OBSERVATION.substance_use_screening archetype for this purpose.\r\n\r\nNot to be used for recording information about appropriate medication use under clinical supervision, for recommended therapeutic intent and at appropriate dosages. Use an appropriate medication archetype for this purpose.",
+          "copyright" : "© Nasjonal IKT HF, openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.substance_use_summary.v1",
     "differential" : true,
@@ -1798,7 +2064,23 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "8BCB58E2E9EBD31E373ADB1EA2ACB437"
       },
-      "details" : { }
+      "details" : {
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To provide a framework and design guidance for consistent modelling of content within a template for a persistent Family history record.",
+          "keywords" : [ "family,history,pedigree,prevalence" ],
+          "use" : "Use as a framework and suggested design guidance for consistent modelling of content within a template for a persistent Family history record.\r\n\r\nThis archetype is intended to be used within the COMPOSITION.family_history or as one component of other COMPOSITION archetypes. For example: complex documents, such as a discharge summary or referral.\r\n\r\nThis list can be comprised of three types of statements, each represented by specific archetypes:\r\n- a statement about the positive presence of family history issues can be recorded using a single instance of the EVALUATION.family_history; OR\r\n- statements about the positive exclusion of family history issues can be recorded using the specific EVALUATION.exclusion-global ; OR\r\n- statements about no information being available - neither a positive presence of family history issues nor a positive exclusion - can be recorded using the EVALUATION.absence archetype.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-SECTION.family_history.v0",
     "differential" : true,
@@ -1849,7 +2131,55 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "42E30743E5A093075AA65AAF9B890DC0"
       },
-      "details" : { }
+      "details" : {
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere et fritekstsammendrag om sosiale omstendigheter, opplevelser eller erfaringer som kan ha en innvirkning på et individs helse. Arketypen gir et rammeverk der en kan nøste detaljerte CLUSTER-arketyper som beskriver ulike aspekter av sosiale omstendigheter, opplevelser eller erfaringer i detalj.",
+          "keywords" : [ "sosial", "familie", "partner", "utdanning", "utdannelse", "arbeid", "jobb", "ansettelse", "miljø", "omgivelser", "bolig", "boforhold", "økonomi", "fritid", "hobby", "aktivitet", "religion", "etnisitet", "språk", "nasjonalitet", "livssyn", "mestringsevne", "erfaringer", "natur", "karakter", "adferdsmønster" ],
+          "use" : "Brukes for å registrere et fritekstsammendrag om sosiale omstendigheter eller opplevelser som kan ha en innvirkning på et individs helse. \r\n\r\nBrukes for å inkludere fritekstbeskrivelser av sosiale omstendigheter eller erfaringer som allerede er registrert i eksisterende kliniske systemer til et arketypeformat.\r\n\r\nBruk som en kontainer arketype for å gi en felles gjenfinnbar ENTRY-arketype som kan inneholde detaljerte CLUSTER-arketyper. Eksempler på passende CLUSTER-arketyper kan være nære relasjoner, sosial støtte, boligforhold, arbeid, utdannelse og livssyn.\r\n\r\nBruken av uttrykket \"Sosialanamnese\" har stor variasjon. Arketypen er utviklet for å tillate representasjon av ulike konsepter som utrykker sosialanamnese i ulike kliniske sammenhenger ved hjelp av en blanding av gjenbrukbare CLUSTER-arketyper.",
+          "misuse" : "Brukes ikke for å registrere informasjon relatert til livsstil. For eksempel: Bruk spesifikke arketyper for bruk av alkohol, tobakk og andre substanser, kosthold og ernæring, og fysisk aktivitet.",
+          "copyright" : "© National E-Health Transition Authority, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record a narrative summary about social circumstances or experiences that may have a potential impact on an individual's health, and to provide a framework in which to nest detailed CLUSTER archetypes, each of which will describe the various aspects of social circumstances or experiences in detail.",
+          "keywords" : [ "social", "family", "education", "occupation", "environment", "housing", "finances", "social history" ],
+          "use" : "Use to record a narrative summary about social circumstances or experiences that may have a potential impact on an individual's health.\r\n\r\nUse to incorporate the narrative descriptions of social circumstances or experiences already captured within existing clinical systems into an archetyped format.\r\n\r\nUse as a container archetype - to provide a common, queryable ENTRY archetype in which specific, detailed CLUSTER archetypes can be nested. Examples of appropriate CLUSTER archetypes may include, and are not limited to, relationships with others, social supports, living arrangements, employment, education and religion.\r\n\r\nThe use of the term 'social summary' varies enormously in practice. This archetype has been designed to allow the concepts that express social history in varying clincial contexts to be represented with the appropriate mix of re-useable archetypes.",
+          "misuse" : "Not to be used to record Lifestyle-related information - for example, use specific archetypes for alcohol, tobacco and other substance use; diet and nutrition; and physical activity.",
+          "copyright" : "© National E-Health Transition Authority, openEHR Foundation, Nasjonal IKT HF",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "it" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "it"
+          },
+          "purpose" : "Registrare una sintesi narrativa sulle circostanze o esperienze sociali che possono avere un potenziale impatto sulla salute di un individuo, e fornire un quadro in cui annidare gli archetipi dettagliati di CLUSTER, ognuno dei quali descriverà in dettaglio i vari aspetti delle circostanze o delle esperienze sociali.",
+          "keywords" : [ "sociale", "famiglia", "educazione", "occupazione", "ambiente", "Alloggiamento", "finanze", "storia sociale" ],
+          "use" : "Utilizzare per registrare un riassunto narrativo su circostanze o esperienze sociali che possono avere un potenziale impatto sulla salute di un individuo.\r\n\r\nUtilizzare per incorporare le descrizioni narrative di circostanze o esperienze sociali già catturate all'interno di sistemi clinici esistenti in un formato archetipizzato.\r\n\r\nUso come archetipo contenitore - per fornire un archetipo comune e interrogabile di ENTRY in cui possono essere annidati specifici e dettagliati archetipi di CLUSTER. Esempi di archetipi di CLUSTER appropriati possono includere, e non sono limitati a, relazioni con gli altri, supporti sociali, organizzazione della vita, occupazione, istruzione e religione.\r\n\r\nL'uso del termine \"riassunto sociale\" varia enormemente nella pratica. Questo archetipo è stato progettato per consentire di rappresentare i concetti che esprimono la storia sociale in diversi contesti clinici con il giusto mix di archetipi riutilizzabili.",
+          "misuse" : "Da non utilizzare per registrare informazioni relative allo stile di vita - per esempio, utilizzare archetipi specifici per l'uso di alcol, tabacco e altre sostanze; dieta e nutrizione; e attività fisica.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-EVALUATION.social_summary.v1",
     "differential" : true,
@@ -1929,7 +2259,69 @@
       "otherDetails" : {
         "PARENT:MD5-CAM-1.0.1" : "AA0BE8C0835250EE579F834B51A6633C"
       },
-      "details" : { }
+      "details" : {
+        "de" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "de"
+          },
+          "purpose" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.",
+          "keywords" : [ "Aussage", "Momentaufnahme" ],
+          "use" : "Zur Aufzeichnung einer Aussage über die aktuelle Einnahme eines einzelnen Medikaments durch eine Person zu einem bestimmten Zeitpunkt.\r\n\r\nIn diesem Zusammenhang beschreibt der Begriff \"Medikamente\" eine breite Palette von Gegenständen, die verschrieben oder \"rezeptfrei\" erworben werden können. Dazu gehören:\r\n- einen einzelnen pharmazeutischen Artikel oder Wirkstoff; \r\n- eine Magistralrezeptur; \r\n- ein Kombinationspräparat; \r\n- ein Nahrungsergänzungsmittel; oder \r\n- ein anderer therapeutischer Artikel, der zur Behandlung oder Vorbeugung von Krankheiten verwendet wird, wie z. B. ein Verband oder eine Wundauflage, die ein antimikrobielles Mittel enthält.\r\n\r\nEs wird davon ausgegangen, dass dieser Archetyp üblicherweise in einem Austauschkontext verwendet wird, z. B. als Teil eines Gesundheitsberichts oder eines Berichts über den Übergang der Versorgung, wobei eine oder mehrere Instanzen dieser Datengruppe verwendet werden können, um eine \"Aktuelle Medikamentenliste\" darzustellen. Zum Beispiel: \r\n- bei der Aufnahme ins Krankenhaus;\r\n- als Teil einer fachärztlichen Überweisung; oder\r\n- als Grundlage für eine Überprüfung der Medikation.\r\n\r\nDie Informationsquelle kann eine Person, ihr Betreuer oder ein Kliniker sein.\r\n\r\nDieser Archetyp wurde so konzipiert, dass er möglichst mit INSTRUCTION.medictation oder ACTION.medication_management übereinstimmt. Er wurde jedoch so eingeschränkt, dass er nur wesentliche Informationen enthält, die für den Austausch oder die Zusammenfassung erforderlich sind, sowie zusätzliche ereignisbasierte Datenelemente wie das Datenelement \"Zuletzt verabreicht\", um einen nahtlosen Übergang der Versorgung zu unterstützen. \r\n\r\nFür jedes Medikament oder jede Kombinationspackung ist eine Instanz dieses Archetyps zu erfassen. Wenn dasselbe Medikament in verschiedenen Dosierungen oder mit unterschiedlicher Häufigkeit verwendet wird, sollte jede einzelne Dosierungs- und Häufigkeitsänderung als separate Instanz erfasst werden.\r\n\r\nDieser Archetyp sollte nur zum Zeitpunkt der Erstellung als aktuell betrachtet werden. \r\n\r\nDieser Archetyp wurde so konzipiert, dass er mit der FHIR-Ressource MedicationStatement übereinstimmt, ist aber absichtlich auf die \"aktuelle Verwendung\" und nicht auf die vergangene oder zukünftige Verwendung beschränkt.\r\n",
+          "misuse" : "Nicht für die Aufzeichnung von zusammenfassenden oder dauerhaften Informationen über die frühere Einnahme eines Medikaments zu verwenden - verwenden Sie zu diesem Zweck EVALUATION.medication_summary.\r\n\r\nNicht zur Aufzeichnung von Details über eine Medikamentenverfügung verwenden - verwenden Sie zu diesem Zweck INSTRUCTION.medication_order.\r\n\r\nNicht zur Aufzeichnung von Details über bestimmte medikamentenbezogene Aktivitäten, wie Verabreichung oder Abgabe, zu verwenden - verwenden Sie zu diesem Zweck ACTION.medication.\r\n\r\nNicht zur Erstellung eines Frameworks zum Aufzeichnen von Antworten auf vordefinierte Screening-Fragen zur Verwendung eines bestimmten Medikaments oder einer Medikamentengruppe geeignet. Verwenden Sie zu diesem Zweck OBSERVATION.medication_screening.\r\n\r\nNicht für die Darstellung einer verabreichten Impfung zu verwenden - verwenden Sie zu diesem Zweck einen geeigneten Archetyp.\r\n\r\nNicht zu verwenden, um Informationen über verwendete oder implantierte medizinische Geräte zu erfassen.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nb" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nb"
+          },
+          "purpose" : "For å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.",
+          "keywords" : [ "utsagn", "snapshot" ],
+          "use" : "Brukes for å registrere en beskrivelse av den nåværende bruken av et enkelt legemiddel for et individ på et spesifisert tidspunkt.\r\n\r\nI denne av denne arketypen brukes en bred definisjon av \"legemiddel\", og omhandler både legemidler på og uten resept. Dette inkluderer:\r\n- et enkelt farmasøytisk produkt eller middel;\r\n- en tilberedning;\r\n- et kombinasjonsprodukt;\r\n- et ernæringsprodukt; eller\r\n- et annet terapeutisk produkt brukt til å behandle eller forebygge sykdom, for eksempel en bandasje med et antimikrobielt middel.\r\n\r\nDenne arketypen vil vanligvis bli brukt ved utveksling av informasjon, for eksempel som en del av en helseoppsummering eller en oppsummering ved overflytting mellom helseinstitusjoner. I slike tilfeller kan en eller flere instanser av denne arketypen brukes til å representere en \"Nåværende medikamentliste\". For eksempel:\r\n- ved innleggelse på sykehus,\r\n- som en del av en spesialisthenvisning,\r\n- som grunnlag for en medikamentgjennomgang.\r\n\r\nKilden til informasjon kan være en person, deres omsorgsperson eller en kliniker.\r\n\r\nDenne arketypen er utformet for å kunne samsvare med INSTRUCTION.medication_order (Legemiddelordinering) eller ACTION.medication (Legemiddelhåndtering) ved behov. Imidlertid er arketypen begrenset til å kun representere essensiell informasjon som er nødvendig for utveksling eller oppsummeringsformål, i tillegg til hendelsesbaserte dataelementer som \"Sist administrert\". Dette er gjort for å støtte en sømløs omsorgsovergang.\r\n\r\nRegistrer én forekomst av denne arketypen per legemiddel eller kombinasjonspakke. Brukes samme legemiddel i ulike doser eller dosefrekvenser, skal hver unike doserings- og frekvensvariasjon registreres som en separat forekomst.\r\n\r\nDenne arketypen bør bare betraktes som oppdatert på registreringstidspunktet.\r\n\r\nDenne arketypen er utformet for å samsvare med FHIR MedicationStatement-ressursen, men er bevisst begrenset til \"nåværende bruk\", og ikke for tidligere eller fremtidig bruk av et legemiddel.",
+          "misuse" : "Brukes ikke for å registrere et sammendrag om all bruk av et spesifisert legemiddel over et individs livstid, bruk arketypen EVALUATION.medication_summary (Legemiddelsammendrag) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere forordningen av et legemiddel - bruk arketypen INSTRUCTION.medication_order (Legemiddelordinering) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere administreringen av et legemiddel - bruk arketypen ACTION.medication (Legemiddelhåndtering) til dette formålet.\r\n\r\nBrukes ikke for å lage et rammeverk for registrering av svar på forhåndsdefinerte spørsmål om bruken av et hvilket som helst legemiddel eller gruppe av legemidler. Bruk OBSERVATION.medication_screening (Kartleggingsspørsmål om legemidler) til dette formålet.\r\n\r\nBrukes ikke for å dokumentere en vaksine som er administrert - bruk en egnet arketype til dette formålet.\r\n\r\nBrukes ikke for å registrere infomrasjon om medisinsk utstyr som er brukt eller implantert. Bruk en egnet arketype til dette formålet.",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "en" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "en"
+          },
+          "purpose" : "To record an assertion about the current use of a single medication by an individual at a specified point in time.",
+          "keywords" : [ "statement", "snapshot" ],
+          "use" : "Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’. For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use.",
+          "misuse" : "Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted.",
+          "copyright" : "© openEHR Foundation",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        },
+        "nl" : {
+          "@type" : "RESOURCE_DESCRIPTION_ITEM",
+          "language" : {
+            "terminologyId" : {
+              "value" : "ISO_639-1"
+            },
+            "codeString" : "nl"
+          },
+          "purpose" : "*To record an assertion about the current use of a single medication by an individual at a specified point in time. (en)",
+          "keywords" : [ "*statement (en)", "*snapshot (en)" ],
+          "use" : "*Use to record an assertion about the current use of a single medication by an individual at a specified point in time.\r\n\r\nIn this medication statement context, ‘medication’ describes a wide range of items that may be prescribed or obtained 'over the counter'. This includes:\r\n- a single pharmaceutical item or agent; \r\n- an extemporaneous preparation; \r\n- a combination therapy product; \r\n- a nutritional product; or \r\n- another therapeutic item used to treat or prevent disease, such as a bandage or dressing containing an antimicrobial agent.\r\n\r\nIt is anticipated that this archetype will commonly be used within an exchange context, for example as part of a health summary or transition of care summary, where one or more instances of this data group may be used to represent a ‘Current medication list’.  For example: \r\n- on admission to hospital;\r\n- as part of a specialist referral; or\r\n- as the basis for a medication review.\r\n\r\nThe source of information may be an individual, their carer or a clinician.\r\n\r\nThis archetype has been designed to align with INSTRUCTION.medictation or ACTION.medication_management, where possible. However, it has been constrained to represent only essential information necessary for exchange or summary purposes, plus the addition of event-based data elements such as the ‘Last administered’ data element to support a seamless transition of care. \r\n\r\nRecord one instance of this archetype per medication or combination pack. If the same medication is being used in different dose amounts or varying dose frequencies, each unique dosage and frequency variation should be recorded as a separate instance.\r\n\r\nThis archetype should only be considered up-to-date at the time of authoring. \r\n\r\nThis archetype has been designed to align with the FHIR MedicationStatement resource but is intentionally constrained to 'current use', rather than past or future use. (en)",
+          "misuse" : "*Not to be used to record summary or persistent information about past use of a medication - use EVALUATION.medication_summary for this purpose.\r\n\r\nNot to be used to record details about a medication order - use INSTRUCTION.medication_order for this purpose.\r\n\r\nNot to be used to record details about specific medication related activities, such as administration or dispensing - use ACTION.medication for this purpose.\r\n\r\nNot to be used to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping of medications - use OBSERVATION.medication_screening for this purpose.\r\n\r\nNot to be used to represent a vaccination that has been administered - use an appropriate archetype for this purpose.\r\n\r\nNot to be used to record information about medical devices that are used or implanted. (en)",
+          "originalResourceUri" : { },
+          "otherDetails" : { }
+        }
+      }
     },
     "parentArchetypeId" : "openEHR-EHR-OBSERVATION.medication_statement.v0",
     "differential" : true,
@@ -2013,6 +2405,268 @@
       "accreditation" : "MD",
       "otherDetails" : { }
     } ]
+  }, {
+    "@type" : "TEMPLATE_OVERLAY",
+    "uid" : "e31af884-9435-494f-87ea-9e3a46de210f",
+    "description" : {
+      "@type" : "RESOURCE_DESCRIPTION",
+      "originalAuthor" : { },
+      "otherContributors" : [ ],
+      "ipAcknowledgements" : { },
+      "references" : { },
+      "conversionDetails" : { },
+      "otherDetails" : {
+        "PARENT:MD5-CAM-1.0.1" : "89470078C0364ACBA5B6A5F286E56C79"
+      },
+      "details" : { }
+    },
+    "parentArchetypeId" : "openEHR-EHR-EVALUATION.problem_diagnosis.v1",
+    "differential" : true,
+    "archetypeId" : {
+      "@type" : "ARCHETYPE_HRID",
+      "value" : "openEHR-EHR-EVALUATION.ovl-problem_diagnosis-001.v1"
+    },
+    "definition" : {
+      "@type" : "C_COMPLEX_OBJECT",
+      "rmTypeName" : "EVALUATION",
+      "nodeId" : "at0000.1",
+      "attributes" : [ ],
+      "attributeTuples" : [ ]
+    },
+    "terminology" : {
+      "@type" : "ARCHETYPE_TERMINOLOGY",
+      "conceptCode" : "at0000",
+      "termDefinitions" : {
+        "es" : { },
+        "es-ar" : { },
+        "de" : { },
+        "en" : { },
+        "ar-sy" : { },
+        "pt-br" : { },
+        "nb" : { },
+        "sv" : { },
+        "ko" : { },
+        "fi" : { },
+        "it" : { },
+        "nl" : { },
+        "zh" : { },
+        "ca" : { },
+        "zh-cn" : { }
+      },
+      "termBindings" : { },
+      "terminologyExtracts" : { },
+      "valueSets" : { }
+    },
+    "adlVersion" : "1.4",
+    "buildUid" : "a7873ae4-260a-4e4f-96a0-627603ca1246",
+    "rmName" : "openehr",
+    "rmRelease" : "1.1.0",
+    "generated" : true,
+    "otherMetaData" : { },
+    "originalLanguage" : {
+      "terminologyId" : {
+        "value" : "ISO_639-1"
+      },
+      "codeString" : "en"
+    },
+    "translations" : [ {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "de"
+      },
+      "author" : {
+        "name" : "Aljoscha Kindermann, Jasmin Buck, Sebastian Garde, Natalia Strauch, Alina Rehberg",
+        "organisation" : "Universityhospital of Heidelberg, University of Heidelberg, Central Queensland University, Medizinische Hochschule Hannover",
+        "email" : "Strauch.Natalia@mh-hannover.de, rehberg.alina@mh-hannover.de"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "sv"
+      },
+      "author" : {
+        "name" : "Kirsi Poikela, Jörgen Kuylenstierna, Anette Larsson, Åsa Skagerhult, Per Nemirovski",
+        "organisation" : "Tietoevry Sweden AB, eWeave AB, Region Östergötland, Region Uppsala",
+        "email" : "ext.kirsi.poikela@tieto.com, jorgen.kuylenstierna@solvikshalsan.se, anette.a.larsson@tietoevry.com, asa.skagerhult@regionostergotland.se, per.pertoft.nemirovski@regionuppsala.se"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "fi"
+      },
+      "author" : { },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ko"
+      },
+      "author" : {
+        "name" : "Seung-Jong Yu",
+        "organisation" : "InfoClinic Co.,Ltd.",
+        "email" : "seungjong.yu@gmail.com"
+      },
+      "accreditation" : "M.D.",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "pt-br"
+      },
+      "author" : {
+        "name" : "Adriana Kitajima, Gabriela Alves, Maria Angela Scatena, Marivan Abrahäo",
+        "organisation" : "Core Consulting",
+        "email" : "contato@coreconsulting.com.br"
+      },
+      "accreditation" : "Hospital Alemão Oswaldo Cruz (HAOC)",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ar-sy"
+      },
+      "author" : {
+        "name" : "Mona Saleh"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "it"
+      },
+      "author" : {
+        "name" : "Cecilia Mascia",
+        "organisation" : "CRS4 - Center for advanced studies, research and development in Sardinia, Pula (Cagliari), Italy",
+        "email" : "cecilia.mascia@crs4.it"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh-cn"
+      },
+      "author" : {
+        "name" : "Lin Zhang",
+        "organisation" : "Freelancer",
+        "email" : "linforest@163.com"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es"
+      },
+      "author" : {
+        "name" : "Pablo Pazos, Julio de Sosa",
+        "organisation" : "CaboLabs, Servei Català de la Salut",
+        "email" : "juliodesosa@catsalut.cat"
+      },
+      "accreditation" : "Computer Engineer",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "zh"
+      },
+      "author" : {
+        "name" : "Yexuan Cheng",
+        "organisation" : "浙江大学",
+        "email" : "3160100913@zju.edu.cn"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "es-ar"
+      },
+      "author" : {
+        "name" : "Alan March",
+        "organisation" : "Hospital Universitario Austral, Buenos Aires, Argentina",
+        "email" : "alandmarch@gmail.com"
+      },
+      "accreditation" : "-",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nb"
+      },
+      "author" : {
+        "name" : "Silje Ljosland Bakke, John Tore Valand, Liv Laugen, Vebjørn Arntzen",
+        "organisation" : "Helse Bergen HF, ​Oslo University Hospital, Norway",
+        "email" : "liv.laugen@ous-hf.no, varntzen@ous-hf.no"
+      },
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "nl"
+      },
+      "author" : {
+        "name" : "Joost Holslag",
+        "organisation" : "Nedap",
+        "email" : "joost.holslag@nedap.com"
+      },
+      "accreditation" : "MD",
+      "otherDetails" : { }
+    }, {
+      "@type" : "TRANSLATION_DETAILS",
+      "language" : {
+        "terminologyId" : {
+          "value" : "ISO_639-1"
+        },
+        "codeString" : "ca"
+      },
+      "author" : {
+        "name" : "Manuel José Zafra Doménech",
+        "organisation" : "TRADCREA, S.L.",
+        "email" : "mzafra@tradcrea.com"
+      },
+      "otherDetails" : {
+        "other_contributors" : "Servei Català de la Salut"
+      }
+    } ]
   } ],
   "originalLanguage" : {
     "terminologyId" : {
@@ -2028,11 +2682,7 @@
       },
       "codeString" : "de"
     },
-    "author" : {
-      "name" : "Ramona Wellmann, Natalia Strauch",
-      "organisation" : "Medizinische Hochschule Hannover",
-      "email" : "Strauch.Natalia@mh-hannover.de"
-    },
+    "author" : { },
     "otherDetails" : { }
   }, {
     "@type" : "TRANSLATION_DETAILS",
