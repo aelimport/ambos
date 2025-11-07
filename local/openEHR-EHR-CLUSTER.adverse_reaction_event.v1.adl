@@ -104,7 +104,7 @@ El alcance de este arquetipo ha sido deliberadamente enfocado en identificar un 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"c8e3154969ed0244e47d9ac2ed1382fe">
+		["MD5-CAM-1.0.1"] = <"3834743e9de86f70c5aa79c36cff3553">
 		["build_uid"] = <"d87ee102-8659-4383-82f0-dc11a50c01b1">
 		["revision"] = <"1.0.2">
 	>
@@ -752,51 +752,51 @@ ontology
 				>
 				["at0015"] = <
 					text = <"Erstexposition">
-					description = <"*The date and/or time of the first exposure to the Substance for this Reaction Event. (en)">
-					comment = <"*Exposure can be more complicated by more than one exposure events leading to a reaction. Further details about the nature of the exposure can be provided by use of additional archetypes in the 'Exposure details' SLOT or as text in the 'Exposure description'. (en)">
+					description = <"Datum und/oder Uhrzeit des ersten Kontakts mit dem Stoff im Rahmen dieses Reaktionsereignisses.">
+					comment = <"Eine Exposition kann komplexer sein, wenn mehrere Expositionsereignisse zu einer Reaktion führen. Weitere Details zur Art der Exposition können mithilfe zusätzlicher Archetypen im SLOT „Expositionsdetails“ oder als Text in der „Expositionsbeschreibung“ angegeben werden.">
 				>
 				["at0016"] = <
 					text = <"Dauer der Exposition">
-					description = <"*The total amount of time the individual was exposed to the identified 'Specific substance'. (en)">
+					description = <"Die Gesamtzeit, in der die Person der identifizierten „spezifischen Substanz“ ausgesetzt war.">
 				>
 				["at0017"] = <
 					text = <"Applikationsweg / Expositionsweg">
-					description = <"*The route by which the subject was exposed to the identified 'Specific substance'. (en)">
-					comment = <"*Coding of the Route of Exposure with a terminology should be used wherever possible. (en)">
+					description = <"Der Weg, auf dem die Testperson der identifizierten „spezifischen Substanz“ ausgesetzt war.">
+					comment = <"Die Kodierung des Expositionswegs mit einer entsprechenden Terminologie sollte nach Möglichkeit immer erfolgen.">
 				>
 				["at0018"] = <
 					text = <"Beschreibung der Exposition">
-					description = <"*Narrative description about the exposure to the identified 'Specific substance'. (en)">
+					description = <"Narrative Beschreibung der Exposition gegenüber der identifizierten „spezifischen Substanz“.">
 				>
 				["at0019"] = <
 					text = <"Details zur Exposition">
-					description = <"*Additional details about exposure to the 'Specific substance'. (en)">
+					description = <"Weitere Einzelheiten zur Exposition gegenüber der „spezifischen Substanz“.">
 				>
 				["at0020"] = <
 					text = <"Beschreibung des klinischen Managements">
-					description = <"*Narrative description about the clinical management provided. (en)">
+					description = <"Narrative Beschreibung der durchgeführten klinischen Behandlung.">
 				>
 				["at0021"] = <
 					text = <"Details zum klinischen Management">
-					description = <"*Additional structured details about clinical management for this reaction event. (en)">
+					description = <"Weitere strukturierte Details zum klinischen Management dieses Reaktionsereignisses.">
 				>
 				["at0022"] = <
 					text = <"Details zur Meldung">
-					description = <"*Additional structured details required for reporting to regulatory bodies. (en)">
+					description = <"Für die Berichterstattung an die Aufsichtsbehörden sind zusätzliche strukturierte Angaben erforderlich.">
 				>
 				["at0023"] = <
 					text = <"Informationsquelle">
-					description = <"*Details about the provenance of the information. (en)">
+					description = <"Details zur Herkunft der Informationen.">
 					comment = <"*This SLOT is intended to provide details about the source of information for this particular 'Reaction event'. (en)">
 				>
 				["at0024"] = <
 					text = <"Kommentar">
-					description = <"*Additional narrative about the adverse reaction event not captured in other fields. (en)">
+					description = <"Zusätzliche Beschreibung des unerwünschten Ereignisses, die in anderen Feldern nicht erfasst wurde.">
 				>
 				["at0025"] = <
 					text = <"Unterstützende klinische Informationen">
-					description = <"*Link to further information about the presentation and findings that exist elsewhere in the health record, including allergy test reports. (en)">
-					comment = <"*For example, presenting symptoms, examination findings, diagnosis etc. (en)">
+					description = <"Link zu weiteren Informationen über die Präsentation und die Befunde, die an anderer Stelle in der Krankenakte vorhanden sind, einschließlich Allergietestberichten.">
+					comment = <"Zum Beispiel: Symptome, Untersuchungsbefunde, Diagnose usw.">
 				>
 				["at0026"] = <
 					text = <"unbestätigt">
