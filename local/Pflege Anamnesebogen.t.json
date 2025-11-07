@@ -20,9 +20,9 @@
       "original_namespace" : "org.amboss",
       "original_publisher" : "AMBOSS",
       "custodian_namespace" : "org.amboss",
-      "sem_ver" : "1.0.0",
+      "sem_ver" : "0.0.3",
       "original_language" : "ISO_639-1::de",
-      "MD5-CAM-1.0.1" : "81170a01dcef4b6b350649a6542afd80",
+      "MD5-CAM-1.0.1" : "03688eab816df5e9cc695d279976efc5",
       "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE",
       "build_uid" : ""
     },
@@ -659,7 +659,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Aktuelle Anamnese",
+            "text" : "Anamnesis",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -1170,7 +1170,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Eigenanamnese",
+            "text" : "Personal medical history",
             "description" : "A generic section header which should be renamed in a template to suit a specific clinical context."
           }
         },
@@ -2259,7 +2259,7 @@
           "at0000.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0000.1",
-            "text" : "Vorerkrankungen",
+            "text" : "Story/history",
             "description" : "The subjective clinical history of the subject of care as recorded directly by the subject, or reported to a clinician by the subject or a carer."
           }
         },
