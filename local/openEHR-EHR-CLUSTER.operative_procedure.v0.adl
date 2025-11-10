@@ -47,7 +47,7 @@ Other CLUSTER archetypes can be inserted into the SLOTs to extend this generic a
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b61f3a3ad185cd2ee8ad9fa81c576b77">
+		["MD5-CAM-1.0.1"] = <"13a06900e7b938cd6192018c04761e17">
 		["build_uid"] = <"31822ca5-96dd-4ff3-9d85-220b450db65a">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -168,7 +168,7 @@ ontology
 				>
 				["at0001"] = <
 					text = <"Vorfall">
-					description = <"*Sequence order of the procedure. (en)">
+					description = <"Reihenfolge der Verfahrensschritte.">
 				>
 				["at0002"] = <
 					text = <"Primär">
@@ -180,35 +180,35 @@ ontology
 				>
 				["at0005"] = <
 					text = <"Präoperative Beurteilung">
-					description = <"*Structured details about pre-procedure activities. (en)">
+					description = <"Strukturierte Details zu den vorbereitenden Maßnahmen.">
 				>
 				["at0006"] = <
 					text = <"Ansatz">
-					description = <"*Description about the surgical technique. (en)">
+					description = <"Beschreibung der Operationstechnik.">
 				>
 				["at0007"] = <
 					text = <"Details zum Vorgang">
-					description = <"*Specific details about the operation. (en)">
+					description = <"Spezifische Details zum Vorgang.">
 				>
 				["at0009"] = <
 					text = <"Schließung">
-					description = <"*Narrative description about the closure of the wound. (en)">
+					description = <"Beschreibung des Wundverschlusses.">
 				>
 				["at0010"] = <
 					text = <"Schließungsdetails">
-					description = <"*Specific details about the closure of the wound. (en)">
+					description = <"Spezifische Details zum Wundverschluss.">
 				>
 				["at0011"] = <
 					text = <"Operative Diagnose">
-					description = <"*Single word, phrase or brief description representing the clinical findings from the operation. (en)">
+					description = <"Ein einzelnes Wort, eine kurze Phrase oder eine Kurzbeschreibung, die den klinischen Befund der Operation darstellt.">
 				>
 				["at0012"] = <
 					text = <"Kommentar">
-					description = <"*Additional narrative about the operative procedure, not captured in other fields. (en)">
+					description = <"Zusätzliche Beschreibung des operativen Eingriffs, die in anderen Feldern nicht erfasst wird.">
 				>
 				["at0013"] = <
 					text = <"Ergebnisse">
-					description = <"*Narrative description of the result or consequences of the operation or procedure. (en)">
+					description = <"Narrative Beschreibung des Ergebnisses oder der Folgen der Operation oder des Verfahrens.">
 				>
 			>
 		>
