@@ -8,6 +8,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -19,6 +26,10 @@ description
 	lifecycle_state = <"in_development">
 	other_contributors = <"Vebjorn Arntzen, Oslo University Hospital, Norway", ...>
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record summary or persistent information about an individual's sexual health and history.">
@@ -32,7 +43,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"01d2440ea67d21d8f5c9241558ccd3e3">
+		["MD5-CAM-1.0.1"] = <"8eff26c28aac277da03afd7378af6192">
 		["build_uid"] = <"0e6c4005-235f-440f-862f-f1e16c1b3268">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -42,12 +53,12 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0012] occurrences matches {0..1} matches {    -- Description
+					ELEMENT[at0012.1] occurrences matches {0..1} matches {    -- Description
 						value matches {
 							DV_TEXT matches {*}
 						}
 					}
-					ELEMENT[at0002] occurrences matches {0..1} matches {    -- Status
+					ELEMENT[at0002.1] occurrences matches {0..1} matches {    -- Status
 						value matches {
 							DV_CODED_TEXT matches {
 								defining_code matches {
@@ -59,14 +70,14 @@ definition
 							}
 						}
 					}
-					ELEMENT[at0003] occurrences matches {0..1} matches {    -- First ever sex
+					ELEMENT[at0003.1] occurrences matches {0..1} matches {    -- First ever sex
 						value matches {
 							DV_DURATION matches {
 								value matches {PY/|>=P0Y|}
 							}
 						}
 					}
-					ELEMENT[at0015] occurrences matches {0..1} matches {    -- Comment
+					ELEMENT[at0015.1] occurrences matches {0..1} matches {    -- Comment
 						value matches {
 							DV_TEXT matches {*}
 						}
@@ -95,12 +106,12 @@ definition
 		protocol matches {
 			ITEM_TREE[at0013] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
-					ELEMENT[at0004] occurrences matches {0..1} matches {    -- Last updated
+					ELEMENT[at0004.1] occurrences matches {0..1} matches {    -- Last updated
 						value matches {
 							DV_DATE_TIME matches {*}
 						}
 					}
-					allow_archetype CLUSTER[at0014] occurrences matches {0..*} matches {    -- Extension
+					allow_archetype CLUSTER[at0014.1] occurrences matches {0..*} matches {    -- Extension
 						include
 							archetype_id/value matches {/.*/}
 					}
@@ -185,6 +196,133 @@ ontology
 				["at0.6"] = <
 					text = <"erektile Dysfunktion">
 					description = <"">
+				>
+				["at0012.1"] = <
+					text = <"Description">
+					description = <"Narrative description about the sexual health history of an individual.">
+				>
+				["at0002.1"] = <
+					text = <"Status">
+					description = <"Is the individual sexually active?">
+				>
+				["at0003.1"] = <
+					text = <"First ever sex">
+					description = <"The age when the individual first had sex.">
+				>
+				["at0015.1"] = <
+					text = <"Comment">
+					description = <"Additional narrative about the sexual health history not captured in other fields.">
+				>
+				["at0004.1"] = <
+					text = <"Last updated">
+					description = <"The date this summary was last updated.">
+				>
+				["at0014.1"] = <
+					text = <"Extension">
+					description = <"Additional information required to extend the model with local content or to align with other reference models/formalisms.">
+					comment = <"For example: local information requirements; or additional metadata to align with FHIR.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"*Status (en)">
+					description = <"*Is the individual sexually active? (en)">
+				>
+				["at0003"] = <
+					text = <"*First ever sex (en)">
+					description = <"*The age when the individual first had sex. (en)">
+				>
+				["at0004"] = <
+					text = <"*Last updated (en)">
+					description = <"*The date this summary was last updated. (en)">
+				>
+				["at0009"] = <
+					text = <"*Sexually active, regular partner (en)">
+					description = <"*The individual is sexually active with a regular partner. (en)">
+				>
+				["at0010"] = <
+					text = <"*Sexually active, no regular partner (en)">
+					description = <"*The individual is sexually active but not with a regular partner, has no current partner or has been sexually active in the past.. (en)">
+				>
+				["at0011"] = <
+					text = <"*Never sexually active (en)">
+					description = <"*The individual has never been sexually active. (en)">
+				>
+				["at0012"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description about the sexual health history of an individual. (en)">
+				>
+				["at0013"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0014"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models/formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0015"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the sexual health history not captured in other fields. (en)">
+				>
+				["at0000.1"] = <
+					text = <"*Sexual health summary (en)">
+					description = <"*Summary or persistent information about an individual's sexual health and history. (en)">
+				>
+				["at0.1"] = <
+					text = <"Libido">
+					description = <"">
+				>
+				["at0.2"] = <
+					text = <"*hoch (en)">
+					description = <"">
+				>
+				["at0.3"] = <
+					text = <"*mäßig (en)">
+					description = <"">
+				>
+				["at0.4"] = <
+					text = <"*gering (en)">
+					description = <"">
+				>
+				["at0.5"] = <
+					text = <"*kein Verlangen (en)">
+					description = <"">
+				>
+				["at0.6"] = <
+					text = <"Erektile Dysfunktion">
+					description = <"">
+				>
+				["at0012.1"] = <
+					text = <"Beschreibung">
+					description = <"*Narrative description about the sexual health history of an individual. (en)">
+				>
+				["at0002.1"] = <
+					text = <"Status">
+					description = <"*Is the individual sexually active? (en)">
+				>
+				["at0003.1"] = <
+					text = <"Erste sexuelle Aktivität">
+					description = <"*The age when the individual first had sex. (en)">
+				>
+				["at0015.1"] = <
+					text = <"Kommentar">
+					description = <"*Additional narrative about the sexual health history not captured in other fields. (en)">
+				>
+				["at0004.1"] = <
+					text = <"Letzte Aktualisierung">
+					description = <"*The date this summary was last updated. (en)">
+				>
+				["at0014.1"] = <
+					text = <"Erweiterung">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models/formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 			>
 		>
