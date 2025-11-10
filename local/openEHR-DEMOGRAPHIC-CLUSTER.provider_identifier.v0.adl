@@ -58,7 +58,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f49c7681773b82124dc81405c093db2e">
+		["MD5-CAM-1.0.1"] = <"c7838aa8933bccdcac1617907a997498">
 		["build_uid"] = <"7d74cde1-a76e-4f91-b41b-8d6cd7b7c687">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -283,7 +283,7 @@ ontology
 					description = <"*Indicates the geographic area within which the identifier is used (en)">
 				>
 				["at0003"] = <
-					text = <"Beauftragender">
+					text = <"Herausgeber">
 					description = <"*Identifier issuer (en)">
 				>
 				["at0004"] = <
