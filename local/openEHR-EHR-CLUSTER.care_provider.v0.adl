@@ -23,14 +23,19 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b853aca3c450f58c0ec6089203bcbd8a">
 		["build_uid"] = <"a4e28381-0a78-3713-81e8-87fd41848549">
+		["MD5-CAM-1.0.1"] = <"787ea261cf9f434cbc93bfadbfc13f45">
 	>
 
 definition
 	CLUSTER[at0000] matches {    -- Dienstleister
 		items cardinality matches {1..*; unordered} matches {
-			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Name des Dienstleisters
+			ELEMENT[at0002] occurrences matches {0..1} matches {    -- Behandelnder Arzt
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0004] occurrences matches {0..1} matches {    -- Dienstleister
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -52,11 +57,15 @@ ontology
 					description = <"care_provider">
 				>
 				["at0002"] = <
-					text = <"Name des Dienstleisters">
+					text = <"Behandelnder Arzt">
 					description = <"">
 				>
 				["at0003"] = <
 					text = <"Adresse">
+					description = <"">
+				>
+				["at0004"] = <
+					text = <"Dienstleister">
 					description = <"">
 				>
 			>
