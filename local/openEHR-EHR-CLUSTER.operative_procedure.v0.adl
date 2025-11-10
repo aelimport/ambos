@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -17,6 +24,10 @@ description
 	lifecycle_state = <"in_development">
 	other_contributors = <"Heather Leslie, Ocean Health Systems, Australia","Graeme Crossland, HHIMS program, Northern Territory, Australia">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To record details about the operative aspects of a procedure.">
@@ -36,7 +47,7 @@ Other CLUSTER archetypes can be inserted into the SLOTs to extend this generic a
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"0B61FC138DCD04219DC8E97AB49A636F">
+		["MD5-CAM-1.0.1"] = <"e3a8fedffe260c5cb041e1e088da92fa">
 		["build_uid"] = <"31822ca5-96dd-4ff3-9d85-220b450db65a">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -146,6 +157,58 @@ ontology
 				["at0013"] = <
 					text = <"Outcomes">
 					description = <"Narrative description of the result or consequences of the operation or procedure.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Operative procedure (en)">
+					description = <"*Details about the operative aspects of a procedure. (en)">
+				>
+				["at0001"] = <
+					text = <"*Episode (en)">
+					description = <"*Sequence order of the procedure. (en)">
+				>
+				["at0002"] = <
+					text = <"*Primary (en)">
+					description = <"*The first time the procedure has been performed on this body site. (en)">
+				>
+				["at0003"] = <
+					text = <"*Revision (en)">
+					description = <"*Subsequent times the procedure is performed. (en)">
+				>
+				["at0005"] = <
+					text = <"*Pre-operative assessment (en)">
+					description = <"*Structured details about pre-procedure activities. (en)">
+				>
+				["at0006"] = <
+					text = <"*Approach (en)">
+					description = <"*Description about the surgical technique. (en)">
+				>
+				["at0007"] = <
+					text = <"*Operation details (en)">
+					description = <"*Specific details about the operation. (en)">
+				>
+				["at0009"] = <
+					text = <"*Closure (en)">
+					description = <"*Narrative description about the closure of the wound. (en)">
+				>
+				["at0010"] = <
+					text = <"*Closure details (en)">
+					description = <"*Specific details about the closure of the wound. (en)">
+				>
+				["at0011"] = <
+					text = <"*Operative diagnosis (en)">
+					description = <"*Single word, phrase or brief description representing the clinical findings from the operation. (en)">
+				>
+				["at0012"] = <
+					text = <"*Comment (en)">
+					description = <"*Additional narrative about the operative procedure, not captured in other fields. (en)">
+				>
+				["at0013"] = <
+					text = <"*Outcomes (en)">
+					description = <"*Narrative description of the result or consequences of the operation or procedure. (en)">
 				>
 			>
 		>
