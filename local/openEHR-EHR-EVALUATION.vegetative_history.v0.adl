@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"bab298f218fde6deb35505e50ee50aab">
+		["MD5-CAM-1.0.1"] = <"7a9a1d12bd1582ea46142e531ccd8879">
 		["build_uid"] = <"23d48cff-6343-30c1-9e35-0e2b10ebf28c">
 	>
 
@@ -215,6 +215,25 @@ definition
 							ELEMENT[at0051] occurrences matches {0..1} matches {    -- Nachtschweiss
 								value matches {
 									DV_BOOLEAN matches {*}
+								}
+							}
+						}
+					}
+					ELEMENT[at0052] occurrences matches {0..1} matches {    -- Schlaf
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0053,    -- Normaler Schlaf
+									at0054,    -- Ein- und Durchschlafstörung
+									at0055,    -- Einschlafstörung
+									at0056,    -- Durchschlafstörung
+									at0057,    -- Früherwachen
+									at0058,    -- Tagesmüdigkeit
+									at0059,    -- Schläft tagsüber (Nickerchen)
+									at0060,    -- Schlafdauer (in Stunden)
+									at0061,    -- Schlafqualität (Selbstangabe)
+									at0062]    -- Schlafmittelgebrauch
 								}
 							}
 						}
@@ -430,6 +449,50 @@ ontology
 				>
 				["at0051"] = <
 					text = <"Nachtschweiss">
+					description = <"">
+				>
+				["at0052"] = <
+					text = <"Schlaf">
+					description = <"">
+				>
+				["at0053"] = <
+					text = <"Normaler Schlaf">
+					description = <"">
+				>
+				["at0054"] = <
+					text = <"Ein- und Durchschlafstörung">
+					description = <"">
+				>
+				["at0055"] = <
+					text = <"Einschlafstörung">
+					description = <"">
+				>
+				["at0056"] = <
+					text = <"Durchschlafstörung">
+					description = <"">
+				>
+				["at0057"] = <
+					text = <"Früherwachen">
+					description = <"">
+				>
+				["at0058"] = <
+					text = <"Tagesmüdigkeit">
+					description = <"">
+				>
+				["at0059"] = <
+					text = <"Schläft tagsüber (Nickerchen)">
+					description = <"">
+				>
+				["at0060"] = <
+					text = <"Schlafdauer (in Stunden)">
+					description = <"">
+				>
+				["at0061"] = <
+					text = <"Schlafqualität (Selbstangabe)">
+					description = <"">
+				>
+				["at0062"] = <
+					text = <"Schlafmittelgebrauch">
 					description = <"">
 				>
 			>
