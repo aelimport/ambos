@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"19597c65607d610ddc879742d7e0c0fc">
+		["MD5-CAM-1.0.1"] = <"0ecc636da5eee2876006c62e98bf82de">
 		["build_uid"] = <"23d48cff-6343-30c1-9e35-0e2b10ebf28c">
 	>
 
@@ -174,7 +174,7 @@ definition
 									DV_BOOLEAN matches {*}
 								}
 							}
-							ELEMENT[at0033] occurrences matches {0..1} matches {    -- DV_BOOLEAN
+							ELEMENT[at0033] occurrences matches {0..1} matches {    -- Dyspnoe
 								value matches {
 									DV_BOOLEAN matches {*}
 								}
@@ -323,7 +323,7 @@ ontology
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"DV_BOOLEAN">
+					text = <"Dyspnoe">
 					description = <"">
 				>
 				["at0034"] = <
