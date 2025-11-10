@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"b725f769c642c18af3c09dbf32fec116">
+		["MD5-CAM-1.0.1"] = <"19597c65607d610ddc879742d7e0c0fc">
 		["build_uid"] = <"23d48cff-6343-30c1-9e35-0e2b10ebf28c">
 	>
 
@@ -56,7 +56,16 @@ definition
 					}
 					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Körperliche Aktivität
 						value matches {
-							DV_CODED_TEXT matches {*}
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0042,    -- Extrem inaktiv
+									at0043,    -- Bewegungsarm
+									at0044,    -- Mäßig aktiv
+									at0045,    -- Kräftig aktiv
+									at0046]    -- Extrem aktiv
+								}
+							}
 						}
 					}
 					CLUSTER[at0029] occurrences matches {0..1} matches {    -- Magen/Darm
@@ -171,10 +180,6 @@ definition
 								}
 							}
 						}
-					}
-					allow_archetype CLUSTER[at0041] occurrences matches {0..*} matches {    -- Körperliche Aktivität
-						include
-							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -349,9 +354,25 @@ ontology
 					text = <"Körperliche Aktivität">
 					description = <"">
 				>
-				["at0041"] = <
-					text = <"Körperliche Aktivität">
-					description = <"">
+				["at0042"] = <
+					text = <"Extrem inaktiv">
+					description = <"Die Person ist extrem inaktiv, zum Beispiel ein bettlägeriger Patient.">
+				>
+				["at0043"] = <
+					text = <"Bewegungsarm">
+					description = <"Die Person verbringt die meiste Zeit im Sitzen, zum Beispiel ein Büroangestellter der wenig oder gar keine Bewegung hat.">
+				>
+				["at0044"] = <
+					text = <"Mäßig aktiv">
+					description = <"Die Person ist mäßig aktiv, zum Beispiel ein Bauarbeiter oder eine Person, die täglich eine Stunde läuft.">
+				>
+				["at0045"] = <
+					text = <"Kräftig aktiv">
+					description = <"Die Person ist sehr aktiv, zum Beispiel ein Handarbeiter oder eine Person, die zwei Stunden täglich schwimmt.">
+				>
+				["at0046"] = <
+					text = <"Extrem aktiv">
+					description = <"Die Person ist äußerst aktiv, zum Beispiel ein Wettkampfradfahrer.">
 				>
 			>
 		>
