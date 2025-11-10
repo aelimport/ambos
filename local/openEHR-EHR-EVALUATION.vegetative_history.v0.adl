@@ -1,0 +1,295 @@
+archetype (adl_version=1.4; uid=f2daf7e6-e6d0-4eba-b62a-4cc072b960a8)
+	openEHR-EHR-EVALUATION.vegetative_history.v0
+
+concept
+	[at0000]
+
+language
+	original_language = <[ISO_639-1::de]>
+
+description
+	original_author = <
+		["date"] = <"2025-11-10">
+	>
+	lifecycle_state = <"unmanaged">
+	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+		>
+	>
+	other_details = <
+		["licence"] = <"This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/4.0/.">
+		["custodian_organisation"] = <"openEHR Foundation">
+		["original_namespace"] = <"org.openehr">
+		["original_publisher"] = <"openEHR Foundation">
+		["custodian_namespace"] = <"org.openehr">
+		["MD5-CAM-1.0.1"] = <"88078d9183048e5a2f13dc1a1c50f268">
+		["build_uid"] = <"23d48cff-6343-30c1-9e35-0e2b10ebf28c">
+	>
+
+definition
+	EVALUATION[at0000] matches {    -- Vegetative Anamnese
+		data matches {
+			ITEM_TREE[at0001] matches {    -- Item tree
+				items cardinality matches {0..*; unordered} matches {
+					CLUSTER[at0029] occurrences matches {0..1} matches {    -- Magen/Darm
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0002] occurrences matches {0..1} matches {    -- Übelkeit/Erbrechen
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+							ELEMENT[at0003] occurrences matches {0..1} matches {    -- Sodbrennen
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+							ELEMENT[at0005] occurrences matches {0..1} matches {    -- Bauchschmerzen
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+						}
+					}
+					CLUSTER[at0007] occurrences matches {0..1} matches {    -- Stuhgang
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0006] occurrences matches {0..1} matches {    -- Häufigkeit
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"1/d">
+												units_system = <"http://unitsofmeasure.org">
+												units_display_name = <"1/d">
+											>
+										>
+									>
+								}
+							}
+							ELEMENT[at0008] occurrences matches {0..1} matches {    -- Beshaffenheit
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0009,    -- harter Stuhlgang
+											at0010,    -- sehr fester Stuhlgang
+											at0011,    -- fester bis weicher Stuhlgang
+											at0012,    -- weicher Stuhlgang
+											at0013,    -- weicher Stuhlgang
+											at0014,    -- breiiger Stuhlgang
+											at0015]    -- dünner Stuhlgang
+										}
+									}
+								}
+							}
+						}
+					}
+					CLUSTER[at0016] occurrences matches {0..1} matches {    -- Miktion
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0017] occurrences matches {0..1} matches {    -- Häufigkeit
+								value matches {
+									C_DV_QUANTITY <
+										
+										list = <
+											["1"] = <
+												units = <"1/d">
+												units_system = <"http://unitsofmeasure.org">
+												units_display_name = <"1/d">
+											>
+										>
+									>
+								}
+							}
+							ELEMENT[at0018] occurrences matches {0..1} matches {    -- Beschwerden
+								value matches {
+									DV_CODED_TEXT matches {
+										defining_code matches {
+											[local::
+											at0019,    -- Brennen oder Schmerzen
+											at0020,    -- Häufiger Harndrang
+											at0021,    -- Starker, plötzlicher Harndrang
+											at0022,    -- Schwacher Harnstrahl
+											at0023,    -- Unterbrochener Harnstrahl
+											at0024,    -- Gefühl der unvollständigen Entleerung
+											at0025,    -- Nachträufeln
+											at0026,    -- Harnverlust
+											at0027]    -- Harnverhalt
+										}
+									}
+								}
+							}
+							ELEMENT[at0028] occurrences matches {0..1} matches {    -- Kontinenz
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+						}
+					}
+					CLUSTER[at0030] occurrences matches {0..1} matches {    -- Atmung
+						items cardinality matches {1..*; unordered} matches {
+							ELEMENT[at0031] occurrences matches {0..1} matches {    -- Husten
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+							ELEMENT[at0032] occurrences matches {0..1} matches {    -- Auswurf
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+							ELEMENT[at0033] occurrences matches {0..1} matches {    -- Dyspnoe
+								value matches {
+									DV_BOOLEAN matches {*}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+ontology
+	term_definitions = <
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"Vegetative Anamnese">
+					description = <"vegetative_history">
+				>
+				["at0001"] = <
+					text = <"Item tree">
+					description = <"@ internal @">
+				>
+				["at0002"] = <
+					text = <"Übelkeit/Erbrechen">
+					description = <"">
+				>
+				["at0003"] = <
+					text = <"Sodbrennen">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Bauchschmerzen">
+					description = <"">
+				>
+				["at0006"] = <
+					text = <"Häufigkeit">
+					description = <"">
+				>
+				["1/d"] = <
+					text = <"per Tag">
+					description = <"@ units @">
+				>
+				["at0007"] = <
+					text = <"Stuhgang">
+					description = <"">
+				>
+				["at0008"] = <
+					text = <"Beshaffenheit">
+					description = <"">
+				>
+				["at0009"] = <
+					text = <"harter Stuhlgang">
+					description = <"einzelne kleine, manchmal nussartige Kügelchen">
+				>
+				["at0010"] = <
+					text = <"sehr fester Stuhlgang">
+					description = <"wurstartig, aber klumpig">
+				>
+				["at0011"] = <
+					text = <"fester bis weicher Stuhlgang">
+					description = <"wurstartig, nicht mehr klumpig, aber mit rissiger Oberfläche">
+				>
+				["at0012"] = <
+					text = <"weicher Stuhlgang">
+					description = <"wurstartig mit glatter Oberfläche">
+				>
+				["at0013"] = <
+					text = <"weicher Stuhlgang">
+					description = <"einzelne Klümpchen mit glattem Rand">
+				>
+				["at0014"] = <
+					text = <"breiiger Stuhlgang">
+					description = <"einzelne Klümpchen mit unregelmäßigem Rand">
+				>
+				["at0015"] = <
+					text = <"dünner Stuhlgang">
+					description = <"flüssig, ohne feste Bestandteile">
+				>
+				["at0016"] = <
+					text = <"Miktion">
+					description = <"">
+				>
+				["at0017"] = <
+					text = <"Häufigkeit">
+					description = <"">
+				>
+				["at0018"] = <
+					text = <"Beschwerden">
+					description = <"">
+				>
+				["at0019"] = <
+					text = <"Brennen oder Schmerzen">
+					description = <"">
+				>
+				["at0020"] = <
+					text = <"Häufiger Harndrang">
+					description = <"">
+				>
+				["at0021"] = <
+					text = <"Starker, plötzlicher Harndrang">
+					description = <"">
+				>
+				["at0022"] = <
+					text = <"Schwacher Harnstrahl">
+					description = <"">
+				>
+				["at0023"] = <
+					text = <"Unterbrochener Harnstrahl">
+					description = <"">
+				>
+				["at0024"] = <
+					text = <"Gefühl der unvollständigen Entleerung">
+					description = <"">
+				>
+				["at0025"] = <
+					text = <"Nachträufeln">
+					description = <"">
+				>
+				["at0026"] = <
+					text = <"Harnverlust">
+					description = <"">
+				>
+				["at0027"] = <
+					text = <"Harnverhalt">
+					description = <"">
+				>
+				["at0028"] = <
+					text = <"Kontinenz">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"Magen/Darm">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"Atmung">
+					description = <"">
+				>
+				["at0031"] = <
+					text = <"Husten">
+					description = <"">
+				>
+				["at0032"] = <
+					text = <"Auswurf">
+					description = <"">
+				>
+				["at0033"] = <
+					text = <"Dyspnoe">
+					description = <"">
+				>
+			>
+		>
+	>
