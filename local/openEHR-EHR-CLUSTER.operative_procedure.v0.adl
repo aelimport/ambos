@@ -47,7 +47,7 @@ Other CLUSTER archetypes can be inserted into the SLOTs to extend this generic a
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"1a836294725b46c287fcb0c314d6d0cc">
+		["MD5-CAM-1.0.1"] = <"b61f3a3ad185cd2ee8ad9fa81c576b77">
 		["build_uid"] = <"31822ca5-96dd-4ff3-9d85-220b450db65a">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -171,12 +171,12 @@ ontology
 					description = <"*Sequence order of the procedure. (en)">
 				>
 				["at0002"] = <
-					text = <"*Primary (en)">
-					description = <"*The first time the procedure has been performed on this body site. (en)">
+					text = <"Primär">
+					description = <"Dies ist das erste Mal, dass der Eingriff an dieser Körperstelle durchgeführt wurde.">
 				>
 				["at0003"] = <
-					text = <"*Revision (en)">
-					description = <"*Subsequent times the procedure is performed. (en)">
+					text = <"Revision">
+					description = <"Bei allen weiteren Wiederholungen des Eingriffs.">
 				>
 				["at0005"] = <
 					text = <"Präoperative Beurteilung">
