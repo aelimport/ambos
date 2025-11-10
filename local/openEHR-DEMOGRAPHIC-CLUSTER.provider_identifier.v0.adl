@@ -7,17 +7,17 @@ concept
 language
 	original_language = <[ISO_639-1::en]>
 	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
 		["pt-br"] = <
 			language = <[ISO_639-1::pt-br]>
 			author = <
 				["name"] = <"Sergio Miranda Freire">
 				["organisation"] = <"Universidade do Estado do Rio de Janeiro - UERJ">
 				["email"] = <"sergio@lampada.uerj.br">
-			>
-		>
-		["de"] = <
-			language = <[ISO_639-1::de]>
-			author = <
 			>
 		>
 	>
@@ -58,7 +58,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"6bd70b71165dd6ba8a1efe304cc26d34">
+		["MD5-CAM-1.0.1"] = <"f49c7681773b82124dc81405c093db2e">
 		["build_uid"] = <"7d74cde1-a76e-4f91-b41b-8d6cd7b7c687">
 		["revision"] = <"0.0.1-alpha">
 	>
@@ -271,31 +271,31 @@ ontology
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"*Healthcare provider identifier (en)">
+					text = <"Kennung des Gesundheitsdienstleisters">
 					description = <"*Healthcare provider identifier (en)">
 				>
 				["at0001"] = <
-					text = <"*Identifier designation (en)">
+					text = <"Kennung">
 					description = <"*A number or code assigned to a healthcare provider in order to identify that provider (en)">
 				>
 				["at0002"] = <
-					text = <"*Geographic area (en)">
+					text = <"Gebiet">
 					description = <"*Indicates the geographic area within which the identifier is used (en)">
 				>
 				["at0003"] = <
-					text = <"*Issuer (en)">
+					text = <"Beauftragender">
 					description = <"*Identifier issuer (en)">
 				>
 				["at0004"] = <
-					text = <"*Identifier Usage (en)">
+					text = <"Identifikatorverwendung">
 					description = <"*The purpose or intended use of this unique identifier (en)">
 				>
 				["at0005"] = <
-					text = <"*Duplicate resolution (en)">
+					text = <"Duplikat-Auflösung">
 					description = <"*This group of data allow users to identify where they have determined that two identifiers which appears to be duplicates are not duplicated, or to indicate that where they are discovered to be duplicates -  which number is retired and no longer used, and which is retained (en)">
 				>
 				["at0006"] = <
-					text = <"*Other data (en)">
+					text = <"Anderes">
 					description = <"*Other data about a specific identifier (en)">
 				>
 				["at0010"] = <
@@ -315,23 +315,23 @@ ontology
 					description = <"*Indicates that this identifier is used nationally (en)">
 				>
 				["at0020"] = <
-					text = <"*Not a duplicate of (en)">
+					text = <"Kein Duplikat von">
 					description = <"*The identifier entered into this field is not a duplicate entry of this identifier (en)">
 				>
 				["at0021"] = <
-					text = <"*Duplicate of (en)">
+					text = <"Duplikat von">
 					description = <"*The identifier entered into this field is a duplicate entry of this identifier (en)">
 				>
 				["at0022"] = <
-					text = <"*Confirmed by organisation (en)">
+					text = <"Bestätigt durch Organisation">
 					description = <"*The organisation that has confirmed the duplicate or not duplicate status of this identifier (en)">
 				>
 				["at0023"] = <
-					text = <"*Date confirmed (en)">
+					text = <"Bestätigungsdatum">
 					description = <"*The date upon which this identifier was determined as a duplicate or not a duplicate (en)">
 				>
 				["at0024"] = <
-					text = <"*Retired identifider (en)">
+					text = <"Ausgemusterte Kennung">
 					description = <"*For a duplicate identifier set this field indicates if this number is the one retired (nor for further use) or not (en)">
 				>
 			>
