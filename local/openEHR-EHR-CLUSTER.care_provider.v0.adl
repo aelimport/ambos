@@ -24,7 +24,7 @@ description
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
 		["build_uid"] = <"a4e28381-0a78-3713-81e8-87fd41848549">
-		["MD5-CAM-1.0.1"] = <"787ea261cf9f434cbc93bfadbfc13f45">
+		["MD5-CAM-1.0.1"] = <"6a667d877eab54648a6b495fc7edf9fb">
 	>
 
 definition
@@ -41,6 +41,11 @@ definition
 				}
 			}
 			ELEMENT[at0003] occurrences matches {0..1} matches {    -- Adresse
+				value matches {
+					DV_TEXT matches {*}
+				}
+			}
+			ELEMENT[at0005] occurrences matches {0..1} matches {    -- Kennung
 				value matches {
 					DV_TEXT matches {*}
 				}
@@ -66,6 +71,10 @@ ontology
 				>
 				["at0004"] = <
 					text = <"Dienstleister">
+					description = <"">
+				>
+				["at0005"] = <
+					text = <"Kennung">
 					description = <"">
 				>
 			>
