@@ -23,7 +23,7 @@ description
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"88078d9183048e5a2f13dc1a1c50f268">
+		["MD5-CAM-1.0.1"] = <"b725f769c642c18af3c09dbf32fec116">
 		["build_uid"] = <"23d48cff-6343-30c1-9e35-0e2b10ebf28c">
 	>
 
@@ -32,6 +32,33 @@ definition
 		data matches {
 			ITEM_TREE[at0001] matches {    -- Item tree
 				items cardinality matches {0..*; unordered} matches {
+					ELEMENT[at0034] occurrences matches {0..1} matches {    -- Durst
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0035] occurrences matches {0..1} matches {    -- Appetit
+						value matches {
+							DV_BOOLEAN matches {*}
+						}
+					}
+					ELEMENT[at0036] occurrences matches {0..1} matches {    -- Ernährung
+						value matches {
+							DV_CODED_TEXT matches {
+								defining_code matches {
+									[local::
+									at0037,    -- mischköstlich
+									at0038,    -- vegetarisch
+									at0039]    -- vegan
+								}
+							}
+						}
+					}
+					ELEMENT[at0040] occurrences matches {0..1} matches {    -- Körperliche Aktivität
+						value matches {
+							DV_CODED_TEXT matches {*}
+						}
+					}
 					CLUSTER[at0029] occurrences matches {0..1} matches {    -- Magen/Darm
 						items cardinality matches {1..*; unordered} matches {
 							ELEMENT[at0002] occurrences matches {0..1} matches {    -- Übelkeit/Erbrechen
@@ -138,12 +165,16 @@ definition
 									DV_BOOLEAN matches {*}
 								}
 							}
-							ELEMENT[at0033] occurrences matches {0..1} matches {    -- Dyspnoe
+							ELEMENT[at0033] occurrences matches {0..1} matches {    -- DV_BOOLEAN
 								value matches {
 									DV_BOOLEAN matches {*}
 								}
 							}
 						}
+					}
+					allow_archetype CLUSTER[at0041] occurrences matches {0..*} matches {    -- Körperliche Aktivität
+						include
+							archetype_id/value matches {/.*/}
 					}
 				}
 			}
@@ -287,7 +318,39 @@ ontology
 					description = <"">
 				>
 				["at0033"] = <
-					text = <"Dyspnoe">
+					text = <"DV_BOOLEAN">
+					description = <"">
+				>
+				["at0034"] = <
+					text = <"Durst">
+					description = <"">
+				>
+				["at0035"] = <
+					text = <"Appetit">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"Ernährung">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"mischköstlich">
+					description = <"">
+				>
+				["at0038"] = <
+					text = <"vegetarisch">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"vegan">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"Körperliche Aktivität">
+					description = <"">
+				>
+				["at0041"] = <
+					text = <"Körperliche Aktivität">
 					description = <"">
 				>
 			>
