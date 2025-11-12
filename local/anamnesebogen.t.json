@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "9.0.0",
+      "sem_ver" : "10.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE",
-      "MD5-CAM-1.0.1" : "6697419b4140bebc42ba2b8707a7aabd"
+      "MD5-CAM-1.0.1" : "84e0bc0dcd8cbc89730d325779d83100"
     },
     "details" : {
       "de" : {
@@ -1983,7 +1983,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "f1c8b10b6956546e507f85716c67e5e4"
+        "PARENT:MD5-CAM-1.0.1" : "8674e1bb3c70baa6897b7c17f51c6da1"
       },
       "details" : {
         "de" : {
@@ -2040,6 +2040,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0023.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2242,32 +2243,6 @@
           }
         },
         "de" : {
-          "at0021" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0021",
-            "text" : "Name der Impfung",
-            "description" : "Name der Impfung oder der Zielinfektionskrankheit. ",
-            "comment" : "Beispiele: „Alendronsäure“, „Osteoporosemedikamente“ oder „Bisphosphonate“. Die Kodierung des Medikamentennamens mit einer Fachterminologie ist, sofern möglich, erwünscht."
-          },
-          "at0041" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0041",
-            "text" : "Zusätzliche Angaben",
-            "description" : "Strukturierte Details oder Fragen zu dem jeweiligen Impfstoff oder der Impfstoffgruppe."
-          },
-          "at0046" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0046",
-            "text" : "Narbe vorhanden?",
-            "description" : "Vorhandensein oder Fehlen einer sichtbaren, impfbedingten Narbe. "
-          },
-          "at0050" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0050",
-            "text" : "Informationsquelle",
-            "description" : "Quelle der angegebenen Impfinformationen.",
-            "comment" : "Zum Beispiel: Impfpass oder mündliche Anamnese."
-          },
           "at0024.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0024.1",
@@ -2497,6 +2472,7 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
               "nodeId" : "at0023.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
@@ -2644,13 +2620,6 @@
         "en" : { },
         "nb" : { },
         "de" : {
-          "at0002" : {
-            "@type" : "ARCHETYPE_TERM",
-            "code" : "at0002",
-            "text" : "Zeitangaben",
-            "description" : "Angabe des Einnahmezeitpunkts im Zusammenhang mit der Anwendung des Medikaments oder der Medikamentengruppe.",
-            "comment" : "Das Datenelement „Zeitpunkt“ wurde bewusst flexibel gestaltet, um die vielfältigen Einsatzmöglichkeiten in Fragebögen zur Erfassung des Einnahmezeitpunkts von Medikamenten oder Medikamentengruppen zu unterstützen. Die genaue Bedeutung kann in einer Vorlage weiter präzisiert werden. Beispiele hierfür sind: das tatsächliche Datum und/oder die Uhrzeit; Beginn und Ende der Einnahme des Medikaments oder der Medikamentengruppe; der Einnahmezeitraum; die Einnahmedauer; das Alter der Person zum Zeitpunkt der Einnahme; oder die seit der letzten Einnahme vergangene Zeit. Mit dem Datentyp DV_DATE_TIME ist auch die Angabe eines Jahres möglich."
-          },
           "at0002.1" : {
             "@type" : "ARCHETYPE_TERM",
             "code" : "at0002.1",
@@ -2844,8 +2813,9 @@
             "rmAttributeName" : "events",
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
-              "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "rmTypeName" : "POINT_EVENT",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
@@ -2977,7 +2947,8 @@
             "children" : [ {
               "@type" : "C_COMPLEX_OBJECT",
               "rmTypeName" : "EVENT",
-              "nodeId" : "at0002",
+              "occurrences" : "0..1",
+              "nodeId" : "at0002.1",
               "attributes" : [ {
                 "@type" : "C_ATTRIBUTE",
                 "rmAttributeName" : "data",
