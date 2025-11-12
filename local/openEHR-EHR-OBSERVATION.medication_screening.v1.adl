@@ -166,39 +166,39 @@ Not to be used to to create a framework for recording answers to pre-defined scr
 
 Not to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose.">
 		>
-		["es"] = <
-			language = <[ISO_639-1::es]>
-			purpose = <"Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo de medicamentos específico.">
-			keywords = <"medicación, cribado, cuestionario, fármaco, tratamiento", ...>
-			use = <"Úselo para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo (incluidas clases) de medicamentos específicos.
+		["nl"] = <
+			language = <[ISO_639-1::nl]>
+			purpose = <"*To create a framework for recording answers to pre-defined screening questions about the use of a any medication. (en)">
+			keywords = <"*medication, screening, questionnaire, drug, treatment (en)", ...>
+			use = <"*Use to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping (including classes) of medications.
 
-Ejemplos de medicamentos, grupos y clases de medicamentos son \"ácido alendrónico\", \"medicamentos contra la osteoporosis\" y \"bifosfonatos\", respectivamente.
+Examples of medications, groupings and classes of medications are 'alendronic acid', 'anti osteoporosis medications' and 'bisphosphonates', respectively.
 
-Los casos de uso comunes incluyen, entre otros:
-- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de uso de medicamentos, por ejemplo:
---- ¿Usas paracetamol? Sí, No, Desconocido.
---- ¿Ha estado usando algún anticoagulante en las últimas cuatro semanas? Sí, No, Desconocido.
+Common use cases include, but are not limited to:
+- Systematic questioning in any consultation related to patterns of medication usage , for example:
+--- Do you use paracetamol? Yes, No, Unknown.
+--- Have you been using any anticoagulants the last four weeks? Yes, No, Unknown.
 
-La semántica de este arquetipo es intencionalmente en líneas generales y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. En una plantilla, a cada elemento de datos normalmente se le cambiaría el nombre según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.
+The semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.
 
-La estructura EVENTO del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un medicamento que se ha usado en cualquier momento en el pasado e información sobre un medicamento usado dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Usa paracetamol?\", en comparación con \"¿Ha estado usando algún anticoagulante durante las últimas cuatro semanas?\".
+The EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Do you use paracetamol?\" compared to \"Have you been using any anticoagulants the last four weeks?\".
 
-La fuente de información en una respuesta al cuestionario puede variar en diferentes contextos, pero se puede identificar específicamente utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.
+The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
 
-Este arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario de detección identifica la presencia de un medicamento, se recomienda que el sistema clínico registre y mantenga los detalles específicos sobre el medicamento utilizando un arquetipo de medicamento relevante, por ejemplo OBSERVATION.medication_statement para registrar una vista instantánea detallada sobre el uso real de un solo medicamento especificado.">
-			misuse = <"No debe usarse para registrar una orden de administración o consumo de un medicamento; usar INSTRUCTION.medication_order para este propósito.
+This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a medication it is recommended that clinical system record and persist the specific details about the medication using a relevant medication archetype, for example the OBSERVATION.medication_statement to record a detailed snapshot view about the actual use of a single specified medication. (en)">
+			misuse = <"*Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.
 
-No debe usarse para registrar la administración, dispensación o consumo de un medicamento; usar ACTION.medication para este propósito.
+Not to be used for recording the administration, dispensing or consumption of a medication - use ACTION.medication for this purpose.
 
-No debe usarse para registrar un resumen del uso de un medicamento durante la vida del individuo; usar EVALUATION.medication_summary para este propósito.
+Not to be used for recording a summary of use of a medication over the lifetime of the individual - use EVALUATION.medication_summary for this purpose.
 
-No debe utilizarse para registrar una instantánea detallada del uso real de un único medicamento específico, fuera de un contexto de detección. - usar OBSERVATION.medication_statement para este fin.
+Not to be used to record a detailed snapshot view about the actual use of a single specified medication, outside of a screening context. - use OBSERVATION.medication_statement for this purpose.
 
-No debe utilizarse para registrar detalles sobre la ausencia positiva de un medicamento o grupo de medicamentos específico, fuera de un contexto de detección. Utilice EVALUATION.exclusion_specific para este propósito.
+Not to be used to record details about the positive absence of a specific medication or grouping of medication, outside of a screening context. Use EVALUATION.exclusion_specific for this purpose.
 
-No debe utilizarse para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre reacciones adversas, utilice un arquetipo apropiado para este propósito.
+Not to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.
 
-No debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta puede registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este propósito.">
+Not to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)">
 		>
 		["ca"] = <
 			language = <[ISO_639-1::ca]>
@@ -234,39 +234,39 @@ No s'ha d'utilitzar per crear un marc per registrar les respostes a preguntes de
 
 No s'ha d'utilitzar per registrar detalls sobre una llista de selecció simple on una pregunta es pot registrar com a \"present\" o \"indeterminada\". Utilitzeu OBSERVATION.selection_list per a aquest propòsit.">
 		>
-		["nl"] = <
-			language = <[ISO_639-1::nl]>
-			purpose = <"*To create a framework for recording answers to pre-defined screening questions about the use of a any medication. (en)">
-			keywords = <"*medication, screening, questionnaire, drug, treatment (en)", ...>
-			use = <"*Use to create a framework for recording answers to pre-defined screening questions about the use of any specified medication or grouping (including classes) of medications.
+		["es"] = <
+			language = <[ISO_639-1::es]>
+			purpose = <"Crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo de medicamentos específico.">
+			keywords = <"medicación, cribado, cuestionario, fármaco, tratamiento", ...>
+			use = <"Úselo para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre el uso de cualquier medicamento o grupo (incluidas clases) de medicamentos específicos.
 
-Examples of medications, groupings and classes of medications are 'alendronic acid', 'anti osteoporosis medications' and 'bisphosphonates', respectively.
+Ejemplos de medicamentos, grupos y clases de medicamentos son \"ácido alendrónico\", \"medicamentos contra la osteoporosis\" y \"bifosfonatos\", respectivamente.
 
-Common use cases include, but are not limited to:
-- Systematic questioning in any consultation related to patterns of medication usage , for example:
---- Do you use paracetamol? Yes, No, Unknown.
---- Have you been using any anticoagulants the last four weeks? Yes, No, Unknown.
+Los casos de uso comunes incluyen, entre otros:
+- Cuestionamiento sistemático en cualquier consulta relacionada con patrones de uso de medicamentos, por ejemplo:
+--- ¿Usas paracetamol? Sí, No, Desconocido.
+--- ¿Ha estado usando algún anticoagulante en las últimas cuatro semanas? Sí, No, Desconocido.
 
-The semantics of this archetype are intentionally loose, and querying this archetype would normally only be useful or safe within the context of each specific template. In a template, each data element would usually be renamed to the specific question asked. Where value sets have been proposed for common use cases, these can be adapted for local use by using the 'text' choice to match each specific use case.
+La semántica de este arquetipo es intencionalmente en líneas generales y consultar este arquetipo normalmente solo sería útil o seguro dentro del contexto de cada plantilla específica. En una plantilla, a cada elemento de datos normalmente se le cambiaría el nombre según la pregunta específica formulada. Cuando se han propuesto conjuntos de valores para casos de uso comunes, estos se pueden adaptar para uso local utilizando la opción de tipos de datos DV_TEXT o DV_BOOLEAN para que coincidan con cada caso de uso específico.
 
-The EVENT structure from the reference model can be used to specify whether the questions relate to point in time or over a period of time. Use a separate instance of this archetype to distinguish between a questionnaire recording information about a procedure that has been performed at any time in the past and information about a procedure performed within a specified time interval - for example the difference between \"Do you use paracetamol?\" compared to \"Have you been using any anticoagulants the last four weeks?\".
+La estructura EVENTO del modelo de referencia se puede utilizar para especificar si las preguntas se relacionan con un momento determinado o durante un período de tiempo. Utilice una instancia separada de este arquetipo para distinguir entre un cuestionario que registra información sobre un medicamento que se ha usado en cualquier momento en el pasado e información sobre un medicamento usado dentro de un intervalo de tiempo específico; por ejemplo, la diferencia entre \"¿Usa paracetamol?\", en comparación con \"¿Ha estado usando algún anticoagulante durante las últimas cuatro semanas?\".
 
-The source of the information in a questionnaire response may vary in different contexts but can be specifically identified using the 'Information provider' element in the Reference Model.
+La fuente de información en una respuesta al cuestionario puede variar en diferentes contextos, pero se puede identificar específicamente utilizando el elemento 'Proveedor de información' en el Modelo de Referencia.
 
-This archetype has been designed to be used as a screening tool or to record simple questionnaire-format data for use in situations such as a disease registry. If the screening questionnaire identifies the presence of a medication it is recommended that clinical system record and persist the specific details about the medication using a relevant medication archetype, for example the OBSERVATION.medication_statement to record a detailed snapshot view about the actual use of a single specified medication. (en)">
-			misuse = <"*Not to be used for recording an order for a medication to be administered or consumed - use INSTRUCTION.medication_order for this purpose.
+Este arquetipo ha sido diseñado para usarse como herramienta de detección o para registrar datos en formato de cuestionario simple para su uso en situaciones como un registro de enfermedades. Si el cuestionario de detección identifica la presencia de un medicamento, se recomienda que el sistema clínico registre y mantenga los detalles específicos sobre el medicamento utilizando un arquetipo de medicamento relevante, por ejemplo OBSERVATION.medication_statement para registrar una vista instantánea detallada sobre el uso real de un solo medicamento especificado.">
+			misuse = <"No debe usarse para registrar una orden de administración o consumo de un medicamento; usar INSTRUCTION.medication_order para este propósito.
 
-Not to be used for recording the administration, dispensing or consumption of a medication - use ACTION.medication for this purpose.
+No debe usarse para registrar la administración, dispensación o consumo de un medicamento; usar ACTION.medication para este propósito.
 
-Not to be used for recording a summary of use of a medication over the lifetime of the individual - use EVALUATION.medication_summary for this purpose.
+No debe usarse para registrar un resumen del uso de un medicamento durante la vida del individuo; usar EVALUATION.medication_summary para este propósito.
 
-Not to be used to record a detailed snapshot view about the actual use of a single specified medication, outside of a screening context. - use OBSERVATION.medication_statement for this purpose.
+No debe utilizarse para registrar una instantánea detallada del uso real de un único medicamento específico, fuera de un contexto de detección. - usar OBSERVATION.medication_statement para este fin.
 
-Not to be used to record details about the positive absence of a specific medication or grouping of medication, outside of a screening context. Use EVALUATION.exclusion_specific for this purpose.
+No debe utilizarse para registrar detalles sobre la ausencia positiva de un medicamento o grupo de medicamentos específico, fuera de un contexto de detección. Utilice EVALUATION.exclusion_specific para este propósito.
 
-Not to be used to to create a framework for recording answers to pre-defined screening questions about adverse reactions, use an appropriate archetype for this purpose.
+No debe utilizarse para crear un marco para registrar respuestas a preguntas de detección predefinidas sobre reacciones adversas, utilice un arquetipo apropiado para este propósito.
 
-Not to be used to record details about a simple selection list where a question may be recorded as either \"present\" or \"indeterminate\". Use OBSERVATION.selection_list for this purpose. (en)">
+No debe utilizarse para registrar detalles sobre una lista de selección simple donde una pregunta puede registrarse como \"presente\" o \"indeterminada\". Utilice OBSERVATION.selection_list para este propósito.">
 		>
 	>
 	other_details = <
@@ -276,7 +276,7 @@ Not to be used to record details about a simple selection list where a question 
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"189016652B796FD2552171C762A5602E">
+		["MD5-CAM-1.0.1"] = <"508412f60061e9901904031cd19114ca">
 		["build_uid"] = <"e71a497f-3cff-4a20-ae9d-e7fbd7d2dcc9">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"1.0.3">
@@ -615,7 +615,7 @@ For eksempel: \"Preoperativ screening\" eller navnet på det faktiske spørreskj
 		["de"] = <
 			items = <
 				["at0000"] = <
-					text = <"Fragebogen zum Medikamenten-Screening">
+					text = <"Screening-Fragebogen zu Medikation">
 					description = <"Eine Reihe von Fragen und zugehörigen Antworten, die zum Screening auf die Anwendung von Medikamenten verwendet werden.">
 					comment = <"Die Antworten können selbst berichtet werden.">
 				>
