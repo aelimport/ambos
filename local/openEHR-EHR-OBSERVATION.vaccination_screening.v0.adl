@@ -66,7 +66,7 @@ Not to be used to create a framework for recording answers to pre-defined screen
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"a7f2ba490bb4703df64e75ba489da0b1">
+		["MD5-CAM-1.0.1"] = <"8674e1bb3c70baa6897b7c17f51c6da1">
 		["build_uid"] = <"b2f6b468-eb7c-45ad-93a6-e3b9d10ceeed">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -390,15 +390,15 @@ Unknown [It is not known whether the individual uses or has used the specific me
 					description = <"">
 				>
 				["at0036"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0037"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0039"] = <
-					text = <"*Unknown (en)">
+					text = <"Unbekannt">
 					description = <"">
 				>
 				["at0040"] = <
@@ -431,15 +431,15 @@ Unknown [It is not known whether the individual uses or has used the specific me
 					description = <"*Presence or absence of an observed vaccine-related scar. (en)">
 				>
 				["at0047"] = <
-					text = <"*Yes (en)">
+					text = <"Ja">
 					description = <"">
 				>
 				["at0048"] = <
-					text = <"*No (en)">
+					text = <"Nein">
 					description = <"">
 				>
 				["at0049"] = <
-					text = <"*Unknown (en)">
+					text = <"Unbekannt">
 					description = <"">
 				>
 				["at0050"] = <
