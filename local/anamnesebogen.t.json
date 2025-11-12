@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "8.0.0",
+      "sem_ver" : "9.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE",
-      "MD5-CAM-1.0.1" : "63ce20ade0d35ae9c564a3260c4b258e"
+      "MD5-CAM-1.0.1" : "6697419b4140bebc42ba2b8707a7aabd"
     },
     "details" : {
       "de" : {
@@ -1983,7 +1983,7 @@
       "references" : { },
       "conversionDetails" : { },
       "otherDetails" : {
-        "PARENT:MD5-CAM-1.0.1" : "f499ad3c70695f52462f2f123d68f8fc"
+        "PARENT:MD5-CAM-1.0.1" : "f1c8b10b6956546e507f85716c67e5e4"
       },
       "details" : {
         "de" : {
@@ -2095,6 +2095,34 @@
                         "children" : [ {
                           "@type" : "C_COMPLEX_OBJECT",
                           "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0021.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "name",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.6" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
                           "nodeId" : "at0024.1",
                           "attributes" : [ {
                             "@type" : "C_ATTRIBUTE",
@@ -2103,6 +2131,34 @@
                               "@type" : "C_COMPLEX_OBJECT",
                               "rmTypeName" : "DV_BOOLEAN",
                               "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0046.1",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.7" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
                               "attributeTuples" : [ ]
                             } ]
                           } ],
@@ -2127,6 +2183,43 @@
           } ],
           "attributeTuples" : [ ]
         } ]
+      }, {
+        "@type" : "C_ATTRIBUTE",
+        "rmAttributeName" : "protocol",
+        "children" : [ {
+          "@type" : "C_COMPLEX_OBJECT",
+          "rmTypeName" : "ITEM_TREE",
+          "nodeId" : "at0005",
+          "attributes" : [ {
+            "@type" : "C_ATTRIBUTE",
+            "rmAttributeName" : "items",
+            "children" : [ {
+              "@type" : "C_COMPLEX_OBJECT",
+              "rmTypeName" : "ELEMENT",
+              "nodeId" : "at0050.1",
+              "attributes" : [ {
+                "@type" : "C_ATTRIBUTE",
+                "rmAttributeName" : "value",
+                "children" : [ {
+                  "@type" : "C_COMPLEX_OBJECT",
+                  "rmTypeName" : "DV_TEXT",
+                  "attributes" : [ {
+                    "@type" : "C_ATTRIBUTE",
+                    "rmAttributeName" : "value",
+                    "children" : [ {
+                      "@type" : "C_STRING",
+                      "rmTypeName" : "STRING",
+                      "constraint" : [ "Impfpass", "mündliche Anamnese", "/.+/" ]
+                    } ]
+                  } ],
+                  "attributeTuples" : [ ]
+                } ]
+              } ],
+              "attributeTuples" : [ ]
+            } ]
+          } ],
+          "attributeTuples" : [ ]
+        } ]
       } ],
       "attributeTuples" : [ ]
     },
@@ -2134,12 +2227,120 @@
       "@type" : "ARCHETYPE_TERMINOLOGY",
       "conceptCode" : "at0000",
       "termDefinitions" : {
-        "en" : { },
-        "de" : { }
+        "en" : {
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.6",
+            "description" : ""
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "(Synthesized)",
+            "code" : "ac0.7",
+            "description" : ""
+          }
+        },
+        "de" : {
+          "at0021" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0021",
+            "text" : "Name der Impfung",
+            "description" : "Name der Impfung oder der Zielinfektionskrankheit. ",
+            "comment" : "Beispiele: „Alendronsäure“, „Osteoporosemedikamente“ oder „Bisphosphonate“. Die Kodierung des Medikamentennamens mit einer Fachterminologie ist, sofern möglich, erwünscht."
+          },
+          "at0041" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0041",
+            "text" : "Zusätzliche Angaben",
+            "description" : "Strukturierte Details oder Fragen zu dem jeweiligen Impfstoff oder der Impfstoffgruppe."
+          },
+          "at0046" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046",
+            "text" : "Narbe vorhanden?",
+            "description" : "Vorhandensein oder Fehlen einer sichtbaren, impfbedingten Narbe. "
+          },
+          "at0050" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0050",
+            "text" : "Informationsquelle",
+            "description" : "Quelle der angegebenen Impfinformationen.",
+            "comment" : "Zum Beispiel: Impfpass oder mündliche Anamnese."
+          },
+          "at0024.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0024.1",
+            "text" : "geimpft",
+            "description" : "Gibt es in der Vergangenheit Erfahrungen mit der Verwendung eines bestimmten Impfstoffs oder einer bestimmten Impfstoffgruppe? ",
+            "comment" : "In einer Vorlage wird das Datenelement üblicherweise entsprechend der gestellten Frage umbenannt. Der vorgeschlagene Wertesatz kann für den jeweiligen Anwendungsfall angepasst werden, indem die Datentypen DV_TEXT oder DV_BOOLEAN ausgewählt werden.\n\nBeispielsweise könnte ein alternativer Wertesatz mit dem Datentyp DV_TEXT wie folgt aussehen:\nAktuell in Gebrauch [Die Person nimmt das jeweilige Medikament regelmäßig oder nach Bedarf ein.]\nNie in Gebrauch [Die Person hat das jeweilige Medikament noch nie eingenommen.]\nFrüher in Gebrauch [Die Person hat das jeweilige Medikament in der Vergangenheit eingenommen, nimmt es aber aktuell nicht ein.]\nUnbekannt [Es ist nicht bekannt, ob die Person das jeweilige Medikament einnimmt oder eingenommen hat.]"
+          },
+          "ac0.6" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.6",
+            "description" : ""
+          },
+          "at0046.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0046.1",
+            "text" : "Narbe vorhanden?",
+            "description" : "Vorhandensein oder Fehlen einer sichtbaren, impfbedingten Narbe. "
+          },
+          "ac0.7" : {
+            "@type" : "ARCHETYPE_TERM",
+            "text" : "*(Synthesized) (en)",
+            "code" : "ac0.7",
+            "description" : ""
+          },
+          "at0050.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0050.1",
+            "text" : "Informationsquelle",
+            "description" : "Quelle der angegebenen Impfinformationen.",
+            "comment" : "*For example: vaccination card, or oral history. (en)"
+          }
+        }
       },
       "termBindings" : { },
       "terminologyExtracts" : { },
-      "valueSets" : { }
+      "valueSets" : {
+        "ac0.1" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.1",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.2" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.2",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.5" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.5",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.6" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.6",
+          "members" : [ "at0044", "at0045" ]
+        },
+        "ac0.7" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.7",
+          "members" : [ "at0047", "at0048", "at0049" ]
+        }
+      }
     },
     "adlVersion" : "1.4",
     "buildUid" : "b2f6b468-eb7c-45ad-93a6-e3b9d10ceeed",
