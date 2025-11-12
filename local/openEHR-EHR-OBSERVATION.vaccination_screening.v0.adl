@@ -66,7 +66,7 @@ Not to be used to create a framework for recording answers to pre-defined screen
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"f1c8b10b6956546e507f85716c67e5e4">
+		["MD5-CAM-1.0.1"] = <"a7f2ba490bb4703df64e75ba489da0b1">
 		["build_uid"] = <"b2f6b468-eb7c-45ad-93a6-e3b9d10ceeed">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -340,7 +340,7 @@ Unknown [It is not known whether the individual uses or has used the specific me
 					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
 				>
 				["at0021"] = <
-					text = <"Name der Impfung">
+					text = <"Name des Impfstofes">
 					description = <"*Name of vaccination or targeted infectious disease. (en)">
 					comment = <"*For example: 'alendronic acid', 'anti osteoporosis medications' or 'bisphosphonates'.
 Coding of the 'Medication name' with a terminology is preferred, where possible. (en)">
