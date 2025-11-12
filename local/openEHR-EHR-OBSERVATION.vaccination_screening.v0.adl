@@ -6,6 +6,13 @@ concept
 
 language
 	original_language = <[ISO_639-1::en]>
+	translations = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			author = <
+			>
+		>
+	>
 
 description
 	original_author = <
@@ -16,6 +23,10 @@ description
 	>
 	lifecycle_state = <"in_development">
 	details = <
+		["de"] = <
+			language = <[ISO_639-1::de]>
+			copyright = <"© openEHR Foundation">
+		>
 		["en"] = <
 			language = <[ISO_639-1::en]>
 			purpose = <"To create a framework for recording answers to pre-defined screening questions about the use of any specified vaccination or grouping of vaccinations.">
@@ -55,7 +66,7 @@ Not to be used to create a framework for recording answers to pre-defined screen
 		["original_namespace"] = <"org.openehr">
 		["original_publisher"] = <"openEHR Foundation">
 		["custodian_namespace"] = <"org.openehr">
-		["MD5-CAM-1.0.1"] = <"D2FAE0A212C8D7C442ED507F3F1FF357">
+		["MD5-CAM-1.0.1"] = <"f693588d6e99113df8290894429b307b">
 		["build_uid"] = <"b2f6b468-eb7c-45ad-93a6-e3b9d10ceeed">
 		["ip_acknowledgements"] = <"This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyrighted material of the International Health Terminology Standards Development Organisation (IHTSDO). Where an implementation of this artefact makes use of SNOMED CT content, the implementer must have the appropriate SNOMED CT Affiliate license - for more information contact https://www.snomed.org/snomed-ct/get-snomed or info@snomed.org.">
 		["revision"] = <"0.0.1-alpha">
@@ -305,6 +316,136 @@ Unknown [It is not known whether the individual uses or has used the specific me
 					text = <"Information source">
 					description = <"Source of vaccination information provided.">
 					comment = <"For example: vaccination card, or oral history.">
+				>
+			>
+		>
+		["de"] = <
+			items = <
+				["at0000"] = <
+					text = <"*Vaccination screening questionnaire (en)">
+					description = <"*Series of questions and associated answers used to screen for the administration of vaccination. (en)">
+					comment = <"*The answers may be self-reported. (en)">
+				>
+				["at0001"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0005"] = <
+					text = <"Tree">
+					description = <"@ internal @">
+				>
+				["at0019"] = <
+					text = <"*Extension (en)">
+					description = <"*Additional information required to extend the model with local content or to align with other reference models or formalisms. (en)">
+					comment = <"*For example: local information requirements; or additional metadata to align with FHIR. (en)">
+				>
+				["at0021"] = <
+					text = <"*Vaccination name (en)">
+					description = <"*Name of vaccination or targeted infectious disease. (en)">
+					comment = <"*For example: 'alendronic acid', 'anti osteoporosis medications' or 'bisphosphonates'.
+Coding of the 'Medication name' with a terminology is preferred, where possible. (en)">
+				>
+				["at0022"] = <
+					text = <"Event Series">
+					description = <"@ internal @">
+				>
+				["at0023"] = <
+					text = <"*Any event (en)">
+					description = <"*Default, unspecified point in time or interval event which may be explicitly defined in a template or at run-time. (en)">
+				>
+				["at0024"] = <
+					text = <"*Vaccinated? (en)">
+					description = <"*Is there a history of use of a specific vaccine or group of vaccines. (en)">
+					comment = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. 
+For example an alternative valueset using the DV_TEXT datatype can be: 
+Currently using [The individual currently uses the specific medication either on a regular basis or as required.]
+Never used [The individual has never used the specific medication.]
+Used in the past [The individual has used the specific medication in the past, but isn't currently using it.]
+Unknown [It is not known whether the individual uses or has used the specific medication.] (en)">
+				>
+				["at0025"] = <
+					text = <"*Comment (en)">
+					description = <"*Narrative description about the Vaccination screening, not otherwise captured in data fields. (en)">
+				>
+				["at0026"] = <
+					text = <"*Specific vaccination (en)">
+					description = <"*Details about a specified vaccine or grouping of vaccines relevant for the screening purpose. (en)">
+					comment = <"*Use separate instances of this CLUSTER to differentiate between specific medications or groupings of medication. (en)">
+				>
+				["at0027"] = <
+					text = <"*Any vaccinations? (en)">
+					description = <"*Is there a history of administration of any vaccinations related to the screening purpose? (en)">
+					comment = <"*In a template, the data element would usually be renamed to the specific question asked. The proposed value set can be adapted for local use by using the DV_TEXT or the DV_BOOLEAN datatypes choice to match each specific use case. (en)">
+				>
+				["at0028"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0029"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0030"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0036"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0037"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0039"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0040"] = <
+					text = <"*Screening purpose (en)">
+					description = <"*The context or reason for screening. (en)">
+					comment = <"*This data element is intended to provide collection context for the question/answer groups when queried at a later date. It is not expected that this data element will be exposed to the individual, but only stored in data. For example: pre-admission screening, the name of the actual questionnaire or screening for previous use of a class of medications, such as bisphosphonates. (en)">
+				>
+				["at0041"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about the specific vaccine or grouping of vaccines. (en)">
+				>
+				["at0042"] = <
+					text = <"*Additional details (en)">
+					description = <"*Structured details or questions about vaccination screening. (en)">
+				>
+				["at0043"] = <
+					text = <"*Description (en)">
+					description = <"*Narrative description about the history of administration of any vaccinations relevant for the screening purpose. (en)">
+				>
+				["at0044"] = <
+					text = <"*Vaccine name (en)">
+					description = <"*Name of the vaccination. (en)">
+				>
+				["at0045"] = <
+					text = <"*Disease name (en)">
+					description = <"*Name of the targeted infectious disease. (en)">
+				>
+				["at0046"] = <
+					text = <"*Scar present? (en)">
+					description = <"*Presence or absence of an observed vaccine-related scar. (en)">
+				>
+				["at0047"] = <
+					text = <"*Yes (en)">
+					description = <"">
+				>
+				["at0048"] = <
+					text = <"*No (en)">
+					description = <"">
+				>
+				["at0049"] = <
+					text = <"*Unknown (en)">
+					description = <"">
+				>
+				["at0050"] = <
+					text = <"*Information source (en)">
+					description = <"*Source of vaccination information provided. (en)">
+					comment = <"*For example: vaccination card, or oral history. (en)">
 				>
 			>
 		>
