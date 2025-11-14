@@ -19,10 +19,10 @@
       "original_namespace" : "",
       "original_publisher" : "",
       "custodian_namespace" : "",
-      "sem_ver" : "20.0.0",
+      "sem_ver" : "21.0.0",
       "build_uid" : "",
       "PARENT:MD5-CAM-1.0.1" : "A60D0B7F52F1F9C3C9B3518DB83ACDAE",
-      "MD5-CAM-1.0.1" : "e289d44eca32398d20511755ad97f1e7"
+      "MD5-CAM-1.0.1" : "09f3095afff596ceb742161727086bf1"
     },
     "details" : {
       "de" : {
@@ -8294,7 +8294,115 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0022",
+                      "nodeId" : "at0022.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "mehrfach am Tag", "täglich", "mehfach in der Woche", "ein mal in der Woche", "seltener als ein mal in der Woche" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0005.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.3" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "nodeId" : "at0022.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
@@ -8314,7 +8422,7 @@
                                 "children" : [ {
                                   "@type" : "C_STRING",
                                   "rmTypeName" : "STRING",
-                                  "constraint" : [ "Frequenz", "Beschaffenheit", "Aussehen" ]
+                                  "constraint" : [ "Typ 1: Einzelne, feste Kügelchen, schwer auszuscheiden", "Typ 2: Wurstartig, klumpig", "Typ 3: Wurstartig mit rissiger Oberfläche", "Typ 4: Wurstartig mit glatter Oberfläche", "Typ 5: Einzelne weiche, glattrandige Klümpchen, leicht auszuscheiden", "Typ 6: Einzelne weiche Klümpchen mit unregelmäßigem Rand", "Typ 7: Flüssig, ohne feste Bestandteile" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -8435,6 +8543,12 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specific symptom/sign (2)",
+            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
           }
         },
         "fi" : {
@@ -8456,6 +8570,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Oire / tuntemus ryhmitys (2)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "nb" : {
@@ -8477,6 +8597,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt symptom/sykdomstegn (2)",
+            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
@@ -8498,6 +8624,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Beschaffenheit",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.2",
+            "text" : "Frequenz",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           }
         },
         "it" : {
@@ -8519,6 +8657,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sintomo/segno specifico (2)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "sv" : {
@@ -8540,6 +8684,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specifika symptom/tecken (2)",
+            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
           }
         },
         "fr" : {
@@ -8561,6 +8711,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Symptôme/signe spécifique (2)",
+            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
           }
         },
         "zh-cn" : {
@@ -8582,6 +8738,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "具体症状/体征 (2)",
+            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
           }
         },
         "ca" : {
@@ -8603,6 +8765,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Símptoma/signe específic (2)",
+            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
           }
         },
         "es" : {
@@ -8624,6 +8792,12 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Síntoma/signo específico (2)",
+            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
           }
         }
       },
@@ -8638,6 +8812,16 @@
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027", "at0041" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0023", "at0024", "at0027", "at0041" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
           "members" : [ "at0023", "at0024", "at0027", "at0041" ]
         }
       }
@@ -8926,7 +9110,8 @@
                     }, {
                       "@type" : "C_COMPLEX_OBJECT",
                       "rmTypeName" : "CLUSTER",
-                      "nodeId" : "at0022",
+                      "occurrences" : "3..*",
+                      "nodeId" : "at0022.1",
                       "attributes" : [ {
                         "@type" : "C_ATTRIBUTE",
                         "rmAttributeName" : "items",
@@ -8946,7 +9131,7 @@
                                 "children" : [ {
                                   "@type" : "C_STRING",
                                   "rmTypeName" : "STRING",
-                                  "constraint" : [ "Frequenz", "Beschwerden", "Kontinenz" ]
+                                  "constraint" : [ "mehrmals am Tag", "täglich", "seltener" ]
                                 } ]
                               } ],
                               "attributeTuples" : [ ]
@@ -9031,6 +9216,224 @@
                         } ]
                       } ],
                       "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "3..*",
+                      "nodeId" : "at0022.2",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Brennen oder Schmerzen", "Häufiger Harndrang", "Schwacher oder unterbrochener Harnstrahl", "Gefühl der unvollständigen Blasenentleerung", "Plötzlicher, starker Harndrang", "Unwillkürlicher Harnverlust", "Nachträufeln" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0005.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.3" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.2",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
+                    }, {
+                      "@type" : "C_COMPLEX_OBJECT",
+                      "rmTypeName" : "CLUSTER",
+                      "occurrences" : "3..*",
+                      "nodeId" : "at0022.3",
+                      "attributes" : [ {
+                        "@type" : "C_ATTRIBUTE",
+                        "rmAttributeName" : "items",
+                        "children" : [ {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "nodeId" : "at0004.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "value",
+                                "children" : [ {
+                                  "@type" : "C_STRING",
+                                  "rmTypeName" : "STRING",
+                                  "constraint" : [ "Ja", "Nein" ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0005.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_CODED_TEXT",
+                              "attributes" : [ {
+                                "@type" : "C_ATTRIBUTE",
+                                "rmAttributeName" : "defining_code",
+                                "children" : [ {
+                                  "@type" : "C_TERMINOLOGY_CODE",
+                                  "rmTypeName" : "TERMINOLOGY_CODE",
+                                  "occurrences" : "1..1",
+                                  "terminologyId" : {
+                                    "value" : "local"
+                                  },
+                                  "constraint" : [ "ac0.4" ],
+                                  "selectedTerminologies" : [ ]
+                                } ]
+                              } ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_BOOLEAN",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        }, {
+                          "@type" : "C_COMPLEX_OBJECT",
+                          "rmTypeName" : "ELEMENT",
+                          "occurrences" : "0..0",
+                          "nodeId" : "at0037.3",
+                          "attributes" : [ {
+                            "@type" : "C_ATTRIBUTE",
+                            "rmAttributeName" : "value",
+                            "children" : [ {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DURATION",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DURATION>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_DATE_TIME",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_INTERVAL<DV_DATE_TIME>",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            }, {
+                              "@type" : "C_COMPLEX_OBJECT",
+                              "rmTypeName" : "DV_TEXT",
+                              "attributes" : [ ],
+                              "attributeTuples" : [ ]
+                            } ]
+                          } ],
+                          "attributeTuples" : [ ]
+                        } ]
+                      } ],
+                      "attributeTuples" : [ ]
                     } ]
                   } ],
                   "attributeTuples" : [ ]
@@ -9067,6 +9470,18 @@
             "text" : "(Synthesized)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specific symptom/sign (2)",
+            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specific symptom/sign (3)",
+            "description" : "Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose."
           }
         },
         "fi" : {
@@ -9088,6 +9503,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Oire / tuntemus ryhmitys (2)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Oire / tuntemus ryhmitys (3)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "nb" : {
@@ -9109,6 +9536,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt symptom/sykdomstegn (2)",
+            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Spesifikt symptom/sykdomstegn (3)",
+            "description" : "Detaljer om et spesifikt symptom eller sykdomstegn, eller gruppe av symptomer eller sykdomstegn som er innenfor kartleggingsformålet."
           }
         },
         "de" : {
@@ -9130,6 +9569,24 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.1" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Frequenz",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.2",
+            "text" : "Beschwerden",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.3",
+            "text" : "Kontinenz",
+            "description" : "Details zu einem bestimmten Symptom oder Anzeichen oder zu einer bestimmten Gruppe von Symptomen oder Anzeichen, die für das Screening relevant sind."
           }
         },
         "it" : {
@@ -9151,6 +9608,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sintomo/segno specifico (2)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Sintomo/segno specifico (3)",
+            "description" : "*Details about a specific symptom or sign or grouping of symptoms or signs relatevant for the screening purpose. (en)"
           }
         },
         "sv" : {
@@ -9172,6 +9641,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specifika symptom/tecken (2)",
+            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Specifika symptom/tecken (3)",
+            "description" : "Detaljer om ett specifikt symptom eller tecken eller gruppering av symtom eller tecken som är relevanta för screeningändamålet."
           }
         },
         "fr" : {
@@ -9193,6 +9674,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Symptôme/signe spécifique (2)",
+            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Symptôme/signe spécifique (3)",
+            "description" : "Détails concernant un symptôme ou un signe spécifique ou un groupe de symptômes ou de signes en rapport avec l'objectif du dépistage."
           }
         },
         "zh-cn" : {
@@ -9214,6 +9707,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "具体症状/体征 (2)",
+            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "具体症状/体征 (3)",
+            "description" : "关于与筛查目的相关的特定症状或体征或者症状或体征分组的详情。"
           }
         },
         "ca" : {
@@ -9235,6 +9740,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Símptoma/signe específic (2)",
+            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Símptoma/signe específic (3)",
+            "description" : "Detalls sobre un símptoma o signe específic o un grup de símptomes o signes rellevants per al propòsit del cribratge."
           }
         },
         "es" : {
@@ -9256,6 +9773,18 @@
             "text" : "*(Synthesized) (en)",
             "code" : "ac0.2",
             "description" : ""
+          },
+          "at0022.2" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Síntoma/signo específico (2)",
+            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
+          },
+          "at0022.3" : {
+            "@type" : "ARCHETYPE_TERM",
+            "code" : "at0022.1",
+            "text" : "Síntoma/signo específico (3)",
+            "description" : "Detalles sobre un síntoma o signo específico, o de un grupo de síntomas o signos, relevantes para la propósito del cribado."
           }
         }
       },
@@ -9270,6 +9799,16 @@
         "ac0.2" : {
           "@type" : "VALUE_SET",
           "id" : "ac0.2",
+          "members" : [ "at0023", "at0024", "at0027", "at0041" ]
+        },
+        "ac0.3" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.3",
+          "members" : [ "at0023", "at0024", "at0027", "at0041" ]
+        },
+        "ac0.4" : {
+          "@type" : "VALUE_SET",
+          "id" : "ac0.4",
           "members" : [ "at0023", "at0024", "at0027", "at0041" ]
         }
       }
